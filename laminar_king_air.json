@@ -1,0 +1,17 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+	"name": "XP11 default King Air",
+	"author": "Lee C Baker",
+	"name_filter": "King Air C90",
+	"author_filter": ".*Gregory.*",
+	"config": {
+        "engine": {
+            "startup_state": "sim/cockpit2/engine/indicators/N1_percent[$]",
+            "startup_threshold": 54,
+            "timeout": 20,
+            "shutdown_commands": "sim/cockpit2/engine/actuators/mixture_ratio[$]=0",
+            "prestart_commands": ["sim/cockpit2/engine/actuators/mixture_ratio[$]=0.5", "laminar/c90/powerplant/switch/ign_start_up_%"],
+            "poststart_commands": "laminar/c90/powerplant/switch/ign_start_dn_%"
+        }
+    }
+}

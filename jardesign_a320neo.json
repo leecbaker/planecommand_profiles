@@ -1,0 +1,12 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+	"name": "JARDESIGN A320neo",
+	"author": "Lee C Baker",
+	"name_filter": "A320",
+	"author_filter": "JARDESIGN",
+	"config": {
+		"flaps": {
+			"response": "detent"
+        }
+    }
+}

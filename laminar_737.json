@@ -1,0 +1,104 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+	"name": "XP11 Default 737-800",
+	"author": "Lee C Baker",
+	"name_filter": "Boeing.*737.*800",
+	"author_filter": "Unruh",
+	"config": {
+		"flaps": {
+			"settings": [0,1,2,5,10,15,25,30,40],
+			"response": "degree"
+		},
+		"autopilot": {
+			"status": "laminar/B738/autopilot/cmd_a_status", 
+			"on": "laminar/B738/autopilot/cmd_a_press",
+			"off": ["laminar/B738/autopilot/disconnect_toggle", "laminar/B738/autopilot/disconnect_toggle"]
+		},
+		"flight_director": {
+			"status": "laminar/B738/autopilot/flight_director_pos",
+			"on": ["laminar/B738/autopilot/flight_director_toggle", 
+"laminar/B738/autopilot/flight_director_fo_toggle"],
+			"off": ["laminar/B738/autopilot/flight_director_toggle", 
+"laminar/B738/autopilot/flight_director_fo_toggle"]
+		},
+		"autothrottle": {
+			"status": "laminar/B738/autopilot/autothrottle_status", 
+			"on": "laminar/B738/autopilot/autothrottle_arm_toggle",
+			"off": "laminar/B738/autopilot/autothrottle_arm_toggle"
+		},
+		"ap_alt_hold": {
+			"status": "laminar/B738/autopilot/alt_hld_status",
+			 "on": "laminar/B738/autopilot/alt_hld_press",
+			 "off": "laminar/B738/autopilot/alt_hld_press"
+		},
+		"ap_speed_hold": {
+			"status": "laminar/B738/autopilot/speed_status1",
+			 "on": "laminar/B738/autopilot/speed_press",
+			 "off": "laminar/B738/autopilot/speed_press"
+		},
+		"ap_level_change": {
+			"status": "laminar/B738/autopilot/lvl_chg_status",
+			 "on": "laminar/B738/autopilot/lvl_chg_press",
+			 "off": "laminar/B738/autopilot/lvl_chg_press"
+		},
+		"ap_vert_speed_hold": {
+			"status": "laminar/B738/autopilot/vs_status", 
+			"on": "laminar/B738/autopilot/vs_press",
+			"off": "laminar/B738/autopilot/vs_press"
+		},
+		"ap_pitch_hold": null,
+		"ap_heading_hold": {
+			"status": "laminar/B738/autopilot/hdg_sel_status", 
+			"on": "laminar/B738/autopilot/hdg_sel_press",
+			"off": "laminar/B738/autopilot/hdg_sel_press"
+		},
+		"ap_approach_hold": {
+			"status": "laminar/B738/autopilot/app_status", 
+			"on": "laminar/B738/autopilot/app_press",
+			"off": "laminar/B738/autopilot/app_press"
+		},
+		"ap_vnav": {
+			"status": "laminar/B738/autopilot/vnav_status1", 
+			"on": "laminar/B738/autopilot/vnav_press",
+			"off": "laminar/B738/autopilot/vnav_press"
+		},
+		"ap_hnav": {
+			"status": "laminar/B738/autopilot/lnav_status", 
+			"on": "laminar/B738/autopilot/lnav_press",
+			"off": "laminar/B738/autopilot/lnav_press"
+		},
+		"seatbelt_light": {
+			"status": "laminar/B738/toggle_switch/seatbelt_sign_pos", 
+			"on": ["laminar/B738/toggle_switch/seatbelt_sign_dn","laminar/B738/toggle_switch/seatbelt_sign_dn"],
+			"off": ["laminar/B738/toggle_switch/seatbelt_sign_up","laminar/B738/toggle_switch/seatbelt_sign_up"]
+		},
+		"taxi_light": {
+			"status": "laminar/B738/toggle_switch/taxi_light_brightness_pos", 
+			"on": ["laminar/B738/toggle_switch/taxi_light_brightness_pos_dn","laminar/B738/toggle_switch/taxi_light_brightness_pos_dn"],
+			"off": ["laminar/B738/toggle_switch/taxi_light_brightness_pos_up","laminar/B738/toggle_switch/taxi_light_brightness_pos_up"]
+		},
+		"parking_brake": {
+			"status": "laminar/B738/annunciator/parking_brake", 
+			"on": ["sim/flightmodel/controls/parkbrake=1"],
+			"off": ["sim/flightmodel/controls/parkbrake=0"]
+		},
+		"nav_light": {
+			"status":"laminar/B738/toggle_switch/position_light_pos",
+			"on":"laminar/B738/toggle_switch/position_light_down",
+			"off":["laminar/B738/toggle_switch/position_light_down","laminar/B738/toggle_switch/position_light_down", "laminar/B738/toggle_switch/position_light_up"]
+		},
+		"strobe_light": {
+			"status": "sim/cockpit/electrical/strobe_lights_on",
+			"on": ["laminar/B738/toggle_switch/position_light_up", "laminar/B738/toggle_switch/position_light_up"],
+			"off": ["laminar/B738/toggle_switch/position_light_down","laminar/B738/toggle_switch/position_light_down"]
+		},
+		"pitot_heat": {
+			"status": "laminar/B738/toggle_switch/capt_probes_pos",
+			"on": ["laminar/B738/toggle_switch/capt_probes_pos_on","laminar/B738/toggle_switch/fo_probes_pos_on"],
+			"off": ["laminar/B738/toggle_switch/capt_probes_pos_off","laminar/B738/toggle_switch/fo_probes_pos_off"]
+		}
+    }
+}
+
+
+

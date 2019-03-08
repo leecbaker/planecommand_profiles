@@ -1,0 +1,17 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+	"name": "FlyJSim 727",
+	"author": "Lee C Baker",
+	"name_filter": "",
+	"author_filter": "2013",
+	"config": {
+		"landing_light": {
+			"status": "FJS/727/num/OutBoundLLightSwitch1",
+			"on": ["sim/lights/landing_lights_on", "FJS/727/num/OutBoundLLightSwitch1=1", "FJS/727/num/OutBoundLLightSwitch2=1"],
+			"off": ["sim/lights/landing_lights_off", "FJS/727/num/OutBoundLLightSwitch1=0", "FJS/727/num/OutBoundLLightSwitch2=0"]
+		},
+		"flaps": {
+			"response": "degree"
+		}
+    }
+}
