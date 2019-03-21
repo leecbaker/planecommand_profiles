@@ -1,0 +1,81 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "FlightFactor A320",
+    "author": "SSmith",
+    "name_filter": "",
+    "author_filter": "FlightFactor",
+    "config": {
+        "landing_light": {
+            "status": "a320/Overhead/LightLandL",
+            "on": [
+                "a320/Overhead/LandingLightLeftON",
+                "a320/Overhead/LandingLightRightON",
+                "a320/Overhead/NoseOn"
+            ],
+            "off": [
+                "a320/Overhead/LandingLightRightRETRACT",
+                "a320/Overhead/LandingLightLeftRETRACT",
+                "a320/Overhead/NoseOFF"
+            ]
+        },
+        "taxi_light": {
+            "status": "sim/cockpit/electrical/taxi_light_on",
+            "on": "a320/Overhead/NoseTaxi",
+            "off": "a320/Overhead/NoseOFF"
+        },
+        "autopilot": {
+            "status": "a320/Panel/FCU_AutoPilot1",
+            "on": "a320/Panel/FCU_AutoPilot1_Click",
+            "off": "a320/Panel/SidestickTakeoverL_Click"
+        },
+        "ap_approach_hold": {
+            "status": "a320/Panel/FCU_Approach",
+            "on": "a320/Panel/FCU_Approach_Click",
+            "off": "a320/Panel/FCU_Approach_Click"
+        },
+        "ap_altitude": {
+            "value": "sim/cockpit/autopilot/altitude",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "a320/Panel/AltitudeRight",
+                    "down": "a320/Panel/AltitudeLeft",
+                    "step": 1
+                }
+            ]
+        },
+        "altimeter": {
+            "value": "a320Panel/Aircraft/FMGS/FCU1/BaroL",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "a320/Panel/EFISBaroValueUp",
+                    "down": "a320/Panel/EFISBaroValueDown",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_airspeed_knots": {
+            "value": "sim/cockpit/autopilot/airspeed",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "a320/Panel/SpeedUp",
+                    "down": "a320/Panel/SpeedDown",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_heading": {
+            "value": "sim/cockpit/autopilot/heading_mag",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "a320/Panel/HeadingUp",
+                    "down": "a320/Panel/HeadingDown",
+                    "step": 1
+                }
+            ]
+        }
+    }
+}
