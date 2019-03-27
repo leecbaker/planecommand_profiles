@@ -6,62 +6,62 @@
     "author_filter": "FlightFactor",
     "config": {
         "landing_light": {
-            "status": "a320/Overhead/LightLandL",
+            "status": "MOKNY/FFA320/Aircraft/Cockpit/Overhead/LightLandL/Target",
             "on": [
-                "a320/Overhead/LandingLightLeftON",
-                "a320/Overhead/LandingLightRightON",
-                "a320/Overhead/NoseOn"
+                "MOKNY/FFA320/LandingLightLeftON",
+                "MOKNY/FFA320/LandingLightRightON",
+                "MOKNY/FFA320/NoseOn"
             ],
             "off": [
-                "a320/Overhead/LandingLightRightRETRACT",
-                "a320/Overhead/LandingLightLeftRETRACT",
-                "a320/Overhead/NoseOFF"
+                "MOKNY/FFA320/LandingLightRightRETRACT",
+                "MOKNY/FFA320/LandingLightLeftRETRACT",
+                "MOKNY/FFA320/NoseOFF"
             ]
         },
         "taxi_light": {
             "status": "sim/cockpit/electrical/taxi_light_on",
-            "on": "a320/Overhead/NoseTaxi",
-            "off": "a320/Overhead/NoseOFF"
-        },
-        "autopilot": {
-            "status": "a320/Panel/FCU_AutoPilot1",
-            "on": "a320/Panel/FCU_AutoPilot1_Click",
-            "off": "a320/Panel/SidestickTakeoverL_Click"
-        },
-        "ap_approach_hold": {
-            "status": "a320/Panel/FCU_Approach",
-            "on": "a320/Panel/FCU_Approach_Click",
-            "off": "a320/Panel/FCU_Approach_Click"
+            "on": "MOKNY/FFA320/NoseTaxi",
+            "off": "MOKNY/FFA320/NoseOFF"
         },
         "ap_altitude": {
             "value": "sim/cockpit/autopilot/altitude",
             "value_step": 1,
             "adjustments": [
                 {
-                    "up": "a320/Panel/AltitudeRight",
-                    "down": "a320/Panel/AltitudeLeft",
+                    "up": "MOKNY/FFA320/AltitudeRight",
+                    "down": "MOKNY/FFA320/AltitudeLeft",
                     "step": 1
                 }
             ]
         },
         "altimeter": {
-            "value": "a320Panel/Aircraft/FMGS/FCU1/BaroL",
+            "value": "MOKNY/FFA320/Aircraft/FMGS/FCU1/BaroL",
             "value_step": 1,
             "adjustments": [
                 {
-                    "up": "a320/Panel/EFISBaroValueUp",
-                    "down": "a320/Panel/EFISBaroValueDown",
+                    "up": "MOKNY/FFA320/EFISBaroValueUp",
+                    "down": "MOKNY/FFA320/EFISBaroValueDown",
                     "step": 1
                 }
             ]
+        },
+        "autopilot": {
+            "status": "MOKNY/FFA320/Aircraft/Cockpit/Panel/FCU_AutoPilot1/Target",
+            "on": "MOKNY/FFA320/FCUAP1Toggle",
+            "off": "MOKNY/FFA320/FCUAP1Toggle"
+        },
+        "ap_approach_hold": {
+            "status": "MOKNY/FFA320/Aircraft/Cockpit/Panel/FCU_Approach/Target",
+            "on": "MOKNY/FFA320/FCUApprToggle",
+            "off": "MOKNY/FFA320/FCUApprToggle"
         },
         "ap_airspeed_knots": {
             "value": "sim/cockpit/autopilot/airspeed",
             "value_step": 1,
             "adjustments": [
                 {
-                    "up": "a320/Panel/SpeedUp",
-                    "down": "a320/Panel/SpeedDown",
+                    "up": "MOKNY/FFA320/SpeedUp",
+                    "down": "MOKNY/FFA320/SpeedDown",
                     "step": 1
                 }
             ]
@@ -71,8 +71,8 @@
             "value_step": 1,
             "adjustments": [
                 {
-                    "up": "a320/Panel/HeadingUp",
-                    "down": "a320/Panel/HeadingDown",
+                    "up": "MOKNY/FFA320/HeadingUp",
+                    "down": "MOKNY/FFA320/HeadingDown",
                     "step": 1
                 }
             ]
