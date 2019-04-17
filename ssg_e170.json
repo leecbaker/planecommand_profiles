@@ -1,0 +1,37 @@
+{
+  "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+  "name": "XP11 Embraer 170",
+  "author": "Kurt D Kerns",
+  "name_filter": "SSG Embraer 170 Evo",
+  "author_filter": "Supercritical Simulations Group and FJCC",
+  "config": {
+    "taxi_light": {
+      "status": "SSG/EJET/LIGHTS/taxi_nose_lights_sw",
+      "on": [
+        "SSG/EJET/LIGHTS/TAXI_NOSE_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/TAXI_SIDE_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/INSP_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/LOGO_LIGHTS_COMM"
+      ],
+      "off": [
+        "SSG/EJET/LIGHTS/TAXI_NOSE_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/TAXI_SIDE_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/INSP_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/LOGO_LIGHTS_COMM"
+      ]
+    },
+    "landing_light": {
+      "status": "SSG/EJET/LIGHTS/land_nose_lights_sw",
+      "on": [
+        "SSG/EJET/LIGHTS/LAND_LEFT_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/LAND_RIGHT_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/LAND_NOSE_LIGHTS_COMM"
+      ],
+      "off": [
+        "SSG/EJET/LIGHTS/LAND_LEFT_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/LAND_RIGHT_LIGHTS_COMM",
+        "SSG/EJET/LIGHTS/LAND_NOSE_LIGHTS_COMM"
+      ]
+    }
+  }
+}
