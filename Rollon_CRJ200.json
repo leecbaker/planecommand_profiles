@@ -1,0 +1,20 @@
+{
+    "$schema": "",
+	"name": "Rollon CRJ 200",
+	"author": "SSmith",
+	"name_filter": "",
+	"author_filter": "Rollon",
+	"config": {
+		"autopilot": {
+			"status": "sim/cockpit2/autopilot/autopilot_on/target",
+			"on": "sim/cockpit2/autopilot/autopilot_on=1",
+			"off": "sim/cockpit2/autopilot/autopilot_on=0"
+		},
+		"ap_approach_hold": {
+			"status": "sim/autopilot/approach/target",
+			"on": "sim/autopilot/approach_on",
+			"off": "sim/autopilot/approach_off"
+		}	
+	}	
+}
+	
