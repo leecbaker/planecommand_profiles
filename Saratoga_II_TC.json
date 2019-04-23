@@ -1,0 +1,13 @@
+{
+    "$schema": "",
+	"name": "PA32_Saratoga_II_TC",
+	"author": "SSmith",
+	"name_filter": "",
+	"author_filter": "Alabeo",
+	"config": {
+		"flaps": {
+			"settings": [0,10,25,40],
+			"response": "degree"
+		}
+	}	
+}	
