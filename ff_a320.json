@@ -23,6 +23,16 @@
             "on": "MOKNY/FFA320/NoseTaxi",
             "off": "MOKNY/FFA320/NoseOFF"
         },
+        "beacon_light": {
+            "status": "model/controls/light_beacon",
+            "on": "MOKNY/FFA320/BeaconOn",
+            "off": "MOKNY/FFA320/BeaconOFF"
+        },
+        "strobe_light": {
+            "status": "sim/cockpit/electrical/strobe_lights_on",
+            "on": "MOKNY/FFA320/StrobesON",
+            "off": "MOKNY/FFA320/StrobesOFF"
+        },
         "ap_altitude": {
             "value": "sim/cockpit/autopilot/altitude",
             "value_step": 1,
@@ -76,6 +86,11 @@
                     "step": 1
                 }
             ]
+        },
+        "thrust_reverser": {
+            "status": "sim/engines/thrust_reverse_toggle",
+            "on": "sim/engines/thrust_reverse_toggle",
+            "off": "sim/engines/thrust_reverse_toggle"
         }
     }
 }
