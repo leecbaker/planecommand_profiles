@@ -1,42 +1,42 @@
 {
-	"$schema": "",
-	"name": "Boeing 767-300ER XP11",
-	"author": "SSmith",
-	"name_filter": "Boeing 767-300ER",
-	"author_filter": "FlightFactor and StepToSky",
-	"config": {
-		"landing_light": {
-			"status": "1-sim/lights/landingL/switch",
-			"on": [
-				"1-sim/lights/landingL/switch=1",
-				"1-sim/lights/landingR/switch=1",
-				"1-sim/lights/landingN/switch=1"
-			],	
-			"off": [
-				"1-sim/lights/landingL/switch=0",
-				"1-sim/lights/landingR/switch=0",
-				"1-sim/lights/landingN/switch=0"
-			]	
-		},
-		"taxi_light": {
-			"status": "1-sim/lights/landingN/switch",
-			"on": "1-sim/lights/landingN/switch=1",
-			"off": "1-sim/lights/landingN/switch=0"
-		},
-		"beacon_light": {
-			"status":"anim/44/button",
-			"on":"anim/44/button=1",
-			"off":"anim/44/button=0"
-		},
-		"strobe_light": {
-			"status": "anim/45/button",
-			"on": "anim/45/button=1",
-			"off": "anim/45/button=0"
-		},
-		"thrust_reverser": {
-			"status": "1-sim/anim/L/reverser",
-			"on": "sim/engines/thrust_reverse_toggle",
-			"off": "sim/engines/thrust_reverse_toggle"
-		}
-	}	
-}	
+    "$schema": "",
+    "name": "Boeing 767-300ER XP11",
+    "author": "SSmith",
+    "name_filter": "Boeing 767-300ER",
+    "author_filter": "FlightFactor and StepToSky",
+    "config": {
+        "landing_light": {
+            "status": "1-sim/lights/landingL/switch",
+            "on": [
+                "1-sim/lights/landingL/switch=1",
+                "1-sim/lights/landingR/switch=1",
+                "1-sim/lights/landingN/switch=1"
+            ],
+            "off": [
+                "1-sim/lights/landingL/switch=0",
+                "1-sim/lights/landingR/switch=0",
+                "1-sim/lights/landingN/switch=0"
+            ]
+        },
+        "taxi_light": {
+            "status": "1-sim/lights/landingN/switch",
+            "on": "1-sim/lights/landingN/switch=1",
+            "off": "1-sim/lights/landingN/switch=0"
+        },
+        "beacon_light": {
+            "status": "anim/44/button",
+            "on": "anim/44/button=1",
+            "off": "anim/44/button=0"
+        },
+        "strobe_light": {
+            "status": "anim/45/button",
+            "on": "anim/45/button=1",
+            "off": "anim/45/button=0"
+        },
+        "thrust_reverser": {
+            "status": "1-sim/anim/L/reverser",
+            "on": "sim/engines/thrust_reverse_toggle",
+            "off": "sim/engines/thrust_reverse_toggle"
+        }
+    }
+}
