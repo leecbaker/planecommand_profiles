@@ -34,8 +34,8 @@
 			"off": "anim/45/button=0"
 		},
 		"thrust_reverser": {
-			"status": "sim/engines/thrust_reverse_toggle",
-			"on": "sim/engines/thrust_reverse_toggle",					
+			"status": "1-sim/anim/L/reverser",
+			"on": "sim/engines/thrust_reverse_toggle",
 			"off": "sim/engines/thrust_reverse_toggle"
 		}
 	}	
