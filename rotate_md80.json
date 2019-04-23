@@ -59,6 +59,17 @@
 				}
 			]
 		},
+		"ap_vspeed": {
+			"value": "sim/cockpit/autopilot/vertical_velocity",
+			"value_step":1,
+			"adjustments": [
+				{
+					"up": "Rotate/md80/autopilot/pcw_more",
+					"down": "Rotate/md80/autopilot/pcw_less",
+					"step":1
+				}	
+			]
+		},	
 		"ap_airspeed_knots": {
 			"value":"sim/cockpit2/autopilot/airspeed_dial_kts",
 			"value_step":1,
