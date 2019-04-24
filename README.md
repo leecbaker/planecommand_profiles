@@ -2,7 +2,15 @@
 
 This is a collection of profiles for use with PlaneCommand.
 
-If you'd like to make a new profile, you can find documentation at https://planecommand.com/profiles
+## How to download
+
+To use these profiles with PlaneCommand, simply download them by clicking the green "Clone or download" button, then click "Download ZIP".
+
+You can then put all these files inside the directory X-Plane 11/Resources/plugins/PlaneCommand_v3.x.x/data/profiles/.
+
+## How to make a new profile
+
+If you'd like to make a new profile, you can find documentation at https://planecommand.com/profiles . If you have any questions, feel free to email me: lee@planecommand.com.
 
 ## Reporting a problem
 
