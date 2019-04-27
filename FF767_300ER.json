@@ -24,19 +24,82 @@
             "off": "1-sim/lights/landingN/switch=0"
         },
         "beacon_light": {
-            "status": "anim/44/button",
-            "on": "anim/44/button=1",
-            "off": "anim/44/button=0"
+            "status": "sim/cockpit2/switches/beacon_on",
+            "on": [
+                "anim/44/button=1",
+                "sim/cockpit2/switches/beacon_on=1"
+            ],
+            "off": [
+                "anim/44/button=0",
+                "sim/cockpit2/switches/beacon_on=0"
+            ]
         },
         "strobe_light": {
-            "status": "anim/45/button",
-            "on": "anim/45/button=1",
-            "off": "anim/45/button=0"
+            "status": "sim/cockpit2/switches/strobe_lights_on",
+            "on": [
+                "anim/45/button=1",
+                "sim/cockpit2/switches/strobe_lights_on=1"
+            ],
+            "off": [
+                "anim/45/button=0",
+                "sim/cockpit2/switches/strobe_lights_on=0"
+            ]
         },
         "thrust_reverser": {
-            "status": "1-sim/anim/L/reverser",
+            "status": "sim/cockpit2/annunciators/reverser_deployed",
             "on": "sim/engines/thrust_reverse_toggle",
             "off": "sim/engines/thrust_reverse_toggle"
+        },
+        "autopilot": {
+            "status": "1-sim/AP/cmd_L_Button",
+            "on": "1-sim/comm/AP/CMD_L",
+            "off": [
+                "1-sim/comm/AP/ap_disc",
+                "1-sim/AP/cmd_L_Button=0"
+            ]
+        },
+        "ap_altitude": {
+            "value": "757Avionics/ap/alt_act",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "1-sim/comm/AP/altUP",
+                    "down": "1-sim/comm/AP/altDN",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_heading": {
+            "value": "757Avionics/ap/hdg_act",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "1-sim/comm/AP/hdgUP",
+                    "down": "1-sim/comm/AP/hdgDN",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_airspeed_knots": {
+            "value": "757Avionics/ap/spd_act",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "1-sim/comm/AP/spdUP",
+                    "down": "1-sim/comm/AP/spdDN",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_hnav": {
+            "status": "1-sim/AP/lnavButton",
+            "on": "1-sim/AP/lnavButton=1",
+            "off": "1-sim/AP/lnavButton=0"
+        },
+        "ap_vnav": {
+            "status": "1-sim/AP/vnavButton",
+            "on": "1-sim/AP/vnavButton=1",
+            "off": "1-sim/AP/vnavButton=0"
         }
     }
 }
