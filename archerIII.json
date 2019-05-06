@@ -1,0 +1,46 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "PA28 Archer III",
+    "author": "SSmith",
+    "name_filter": "PA28 Archer III",
+    "author_filter": "JustFlight",
+    "config": {
+        "autopilot": {
+            "status": "thranda/autopilot/Power",
+            "on": "thranda/autopilot/Power=1",
+            "off": "thranda/autopilot/Power=0"
+        },
+        "ap_heading": {
+            "value": "sim/cockpit2/autopilot/heading_dial_deg_mag_pilot",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/heading_up",
+                    "down": "sim/autopilot/heading_down",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_alt_hold": {
+            "status": "sim/cockpit2/autopilot/altitude_hold_status",
+            "on": "sim/autopilot/altitude_hold",
+            "off": "sim/autopilot/vertical_speed"
+        },
+        "ap_vert_speed_hold": {
+            "status": "sim/cockpit2/autopilot/vvi_status",
+            "on": "sim/autopilot/vertical_speed",
+            "off": "sim/autopilot/altitude_hold"
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit2/autopilot/vvi_dial_fpm",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/vertical_speed_up",
+                    "down": "sim/autopilot/vertical_speed_down",
+                    "step": 1
+                }
+            ]
+        }
+    }
+}
