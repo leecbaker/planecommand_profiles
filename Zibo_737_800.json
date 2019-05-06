@@ -1,8 +1,8 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
     "name": "Zibo 737-800X",
-    "author": "Lee Baker and SSmith",
     "name_filter": "Boeing 737-800X$",
+    "author": "SSmith",
     "author_filter": "Unruh",
     "config": {
         "flaps": {
@@ -59,10 +59,10 @@
         "autothrottle": {
             "status": "laminar/B738/autopilot/autothrottle_status",
             "on": "laminar/B738/autopilot/autothrottle_arm_toggle",
-            "off": "sim/autopilot/autothrottle_off"
+            "off": "laminar/B738/autopilot/autothrottle_arm_toggle"
         },
         "ap_altitude": {
-            "value": "sim/cockpit2/autopilot/altitude_dial_ft",
+            "value": "laminar/B738/autopilot/mcp_alt_dial",
             "value_step": 1,
             "adjustments": [
                 {
