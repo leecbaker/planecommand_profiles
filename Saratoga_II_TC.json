@@ -1,5 +1,5 @@
 {
-    "$schema": "",
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
 	"name": "PA32_Saratoga_II_TC",
 	"author": "SSmith",
 	"name_filter": "",

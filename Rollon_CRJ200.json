@@ -1,5 +1,5 @@
 {
-    "$schema": "",
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
 	"name": "Rollon CRJ 200",
 	"author": "SSmith",
 	"name_filter": "",

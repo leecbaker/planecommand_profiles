@@ -1,5 +1,5 @@
 {
-    "$schema": "",
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
     "name": "Boeing 767-300ER XP11",
     "author": "SSmith",
     "name_filter": "Boeing 767-300ER",

@@ -1,10 +1,10 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-	"name": "XP11 default King Air",
-	"author": "Lee C Baker",
-	"name_filter": "B1900",
-	"author_filter": "Carenado",
-	"config": {
+    "name": "XP11 default King Air",
+    "author": "Lee C Baker",
+    "name_filter": "B1900",
+    "author_filter": "Carenado",
+    "config": {
         "engine": {
             "startup_state": "sim/cockpit2/engine/indicators/N1_percent[$]",
             "startup_threshold": 54,
