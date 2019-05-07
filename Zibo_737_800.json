@@ -1,7 +1,7 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
     "name": "Zibo 737-800X",
-    "name_filter": "Boeing 737-800X$",
+    "name_filter": "Boeing 737-800X",
     "author": "SSmith",
     "author_filter": "Unruh",
     "config": {
