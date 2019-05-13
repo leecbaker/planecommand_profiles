@@ -5,15 +5,50 @@
 	"name_filter": "",
 	"author_filter": "Rollon",
 	"config": {
+		"flaps": {
+			"settings": [0,8,20,30,40],
+			"response": "degree"
+		},
+		"flight_director": {
+			"status": "CRJ/autopilot/fd_light", 
+			"on": [
+				"CRJ/autopilot/fd_button=1",
+				"CRJ/autopilot/fd_button=0",
+				"CRJ/autopilot/fd_light=1"				
+			],
+			"off": [
+				"CRJ/autopilot/fd_button=1",
+				"CRJ/autopilot/fd_button=0",
+				"CRJ/autopilot/fd_light=0"
+			]
+		},
 		"autopilot": {
-			"status": "sim/cockpit2/autopilot/autopilot_on/target",
-			"on": "sim/cockpit2/autopilot/autopilot_on=1",
-			"off": "sim/cockpit2/autopilot/autopilot_on=0"
+			"status": "CRJ/autopilot/ap_eng_light",
+			"on": [
+				"CRJ/autopilot/ap_eng_button=1",
+				"CRJ/autopilot/ap_eng_light=1"
+			],	
+			"off": [
+				"CRJ/autopilot/ap_disc_button=1",
+				"CRJ/autopilot/ap_disc_button=1",
+				"CRJ/autopilot/ap_eng_light=0"
+			]	
 		},
 		"ap_approach_hold": {
-			"status": "sim/autopilot/approach/target",
-			"on": "sim/autopilot/approach_on",
-			"off": "sim/autopilot/approach_off"
+			"status": "CRJ/autopilot/appr_light",
+			"on": [
+				"CRJ/autopilot/appr_button=1",
+				"CRJ/autopilot/appr_light=1"
+			],	
+			"off": [
+				"CRJ/autopilot/appr_button=1",
+				"CRJ/autopilot/appr_light=0"
+			]	
+		},
+		"thrust_reverser": {
+			"status": "CRJ/eng/revers_out1",
+			"on": "sim/engines/thrust_reverse_toggle",
+			"off": "sim/engines/thrust_reverse_toggle"
 		}	
 	}	
 }
