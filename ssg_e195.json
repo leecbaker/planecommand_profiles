@@ -1,8 +1,8 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-    "name": "XP11 SSG 170 Evolution",
+    "name": "XP11 SSG 195 Evolution",
     "author": "SSmith",
-    "name_filter": "SSG Embraer 170 Evo",
+    "name_filter": "SSG Embraer 195 Evo",
     "author_filter": "Supercritical Simulations Group",
     "config": {
         "taxi_light": {
