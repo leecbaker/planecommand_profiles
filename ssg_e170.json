@@ -137,13 +137,13 @@
         },
         "ap_vnav": {
             "status": "ssg/B748/MCP/mcp_vnav_act",
-            "on": "ssg/B748/MCP/mcp_vnav_act=1",
-            "off": "ssg/B748/MCP/mcp_vnav_act=0"
+            "on": "SSG/EJET/MCP/VNAV_COMM",
+            "off": "SSG/EJET/MCP/VNAV_COMM"
         },
         "ap_hnav": {
             "status": "ssg/B748/MCP/mcp_lnav_act",
-            "on": "ssg/B748/MCP/mcp_lnav_act=1",
-            "off": "ssg/B748/MCP/mcp_lnav_act=0"
+            "on": "SSG/EJET/MCP/LNAV_COMM",
+            "off": "SSG/EJET/MCP/LNAV_COMM"
         },
         "ap_approach_hold": {
             "status": "ssg/B748/MCP/mcp_app_act",
@@ -165,13 +165,18 @@
             "on": "SSG/EJET/MCP/HDG_COMM",
             "off": "SSG/EJET/MCP/HDG_COMM"
         },
+        "ap_alt_hold": {
+            "status": "ssg/B748/MCP/mcp_alt_hold_ann",
+            "on": "SSG/EJET/MCP/ALT_COMM",
+            "off": "SSG/EJET/MCP/ALT_COMM"
+        },
         "ap_vert_speed_hold": {
-            "status": "ssg/B748/MCP/mcp_vert_speed_act",
+            "status": "ssg/B748/MCP/mcp_vs_ann",
             "on": "SSG/EJET/MCP/VS_COMM",
             "off": "SSG/EJET/MCP/VS_COMM"
         },
         "ap_vspeed": {
-            "value": "ssg/B748/MCP/mcp_alt_up_sw",
+            "value": "ssg/B748/MCP/mcp_vs_target_act",
             "value_step": 1,
             "adjustments": [
                 {
