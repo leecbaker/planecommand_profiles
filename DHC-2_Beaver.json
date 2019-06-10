@@ -1,0 +1,35 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "DHC-2 Beaver XPll",
+    "author": "S Smith",
+    "name_filter": "DHC2 Beaver",
+    "author_filter": "papamac@STMA",
+    "config": {
+        "flaps": {
+            "settings": [
+                0,
+                15,
+                35,
+                50,
+                58
+            ],
+            "response": "degree"
+        },
+        "brake": {
+            "status": "sim/flightmodel/controls/parkbrake",
+            "on": "sim/flightmodel/controls/parkbrake=1",
+            "off": "sim/flightmodel/controls/parkbrake=0"
+        },
+        "avionics_switch": {
+            "status": "sim/cockpit2/switches/avionics_power_on",
+            "on": [
+                "sim/cockpit2/switches/avionics_power_on=1",
+                "sim/cockpit/electrical/instrument_brightness=1"
+            ],
+            "off": [
+                "sim/cockpit2/switches/avionics_power_on=0",
+                "sim/cockpit/electrical/instrument_brightness=0"
+            ]
+        }
+    }
+}
