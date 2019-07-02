@@ -3,7 +3,7 @@
 	"name": "Rollon CRJ 200",
 	"author": "SSmith",
 	"name_filter": "",
-	"author_filter": "Rollon",
+	"author_filter": "Muenzel",
 	"config": {
 		"flaps": {
 			"settings": [0,8,20,30,40],
