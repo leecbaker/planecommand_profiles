@@ -11,7 +11,7 @@
 		"autopilot": {
 			"status": "laminar/B747/autopilot/cmd_L_mode/status", 
 			"on": "laminar/B747/autopilot/button_switch/cmd_L",
-			"off": "laminar/B747/autopilot/switch/disengage_bar"
+			"off": "laminar/B747/autopilot/slide_switch/disengage_bar"
 		},
 		"flight_director": {
 			"status": "laminar/B747/autopilot/AFDS/status_annun", 
@@ -47,11 +47,6 @@
 			"status": "sim/cockpit2/switches/navigation_lights_on",
 			"on": "laminar/B747/toggle_switch/nav_light",
 			"off": "laminar/B747/toggle_switch/nav_light"
-		},
-		"smoking_light": {
-			"status": "laminar/B738/autopilot/flight_director_pos", 
-			"on": "laminar/B738/autopilot/flight_director_toggle",
-			"off": "laminar/B738/autopilot/flight_director_toggle"
 		}
     }
 }
