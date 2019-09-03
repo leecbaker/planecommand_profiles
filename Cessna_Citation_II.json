@@ -1,84 +1,88 @@
 {
-    "$schema": "",
-	"name": "Cessna Citation II",
-	"author": "SSmith",
-	"name_filter": "Citation II",
-	"author_filter": "Carenado",
-	"config": {
-		"flaps": {
-			"settings": [0,7,20,35],
-			"response": "degree"
-		},
-		"avionics_switch": {
-			"status": "sim/cockpit2/switches/avionics_power_on",
-			"on": [
-				"sim/systems/avionics_on",
-				"thranda/electrical/AC_InverterSwitch=1"
-			],
-			"off": [
-				"sim/systems/avionics_off",
-				"thranda/electrical/AC_InverterSwitch=1"
-			]
-		},
-		"seatbelt_light": {
-			"status": "sim/cockpit2/switches/fasten_seat_belts",
-			"on": "sim/cockpit2/switches/fasten_seat_belts=1",
-			"off": "sim/cockpit2/switches/fasten_seat_belts=0"
-		},
-		"landing_light": {
-			"status": "thranda/lights/LandingLightLeft",
-			"on": [
-				"sim/lights/landing_lights_on",
-				"thranda/lights/RecogLights=1"
-			],	
-			"off": [
-				"sim/lights/landing_lights_off",
-				"thranda/lights/RecogLights=0"
-			]	
-		},
-		"generator_switch": {
-			"status":"sim/cockpit/electrical/generator_apu_on",
-			"on": [
-				"sim/electrical/generator_1_on",
-				"sim/electrical/generator_2_on",
-				"sim/cockpit/electrical/generator_apu_on=1"
-			],
-			"off": [
-				"sim/electrical/generator_1_off",
-				"sim/electrical/generator_2_off",
-				"sim/cockpit/electrical/generator_apu_on=0"
-			]
-		},
-		"autopilot": {
-			"status": "sim/cockpit2/autopilot/autopilot_on_or_cws", 
-			"on": "sim/autopilot/servos_toggle",
-			"off": "sim/autopilot/servos_toggle"
-		},
-		"ap_heading_hold": {
-			"status": "sim/cockpit2/autopilot/heading_mode",
-			"on": "sim/autopilot/heading",
-			"off": "sim/autopilot/heading"
-		},	
-		"ap_hnav": {
-			"status": "sim/cockpit2/autopilot/nav_status", 
-			"on": "sim/autopilot/NAV",
-			"off": "sim/autopilot/NAV"
-		},
-		"ap_approach_hold": {
-			"status": "sim/cockpit2/autopilot/glideslope_status", 
-			"on": "sim/autopilot/approach",
-			"off": "sim/autopilot/approach"
-		},
-		"ap_pitch_hold": {
-			"status": "sim/cockpit2/autopilot/altitude_hold_armed",
-				"on": "sim/autopilot/altitude_arm",
-				"off": "sim/autopilot/altitude_arm"
-		},	
-		"ap_vnav": {
-			"status": "sim/cockpit2/autopilot/fms_vnav", 
-			"on": "sim/cockpit2/autopilot/fms_vnav=1",
-			"off": "sim/cockpit2/autopilot/fms_vnav=0"
-		}
-	}	
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "Cessna Citation II",
+    "author": "SSmith",
+    "name_filter": "Citation II",
+    "author_filter": "Carenado",
+    "config": {
+        "flaps": {
+            "settings": [
+                0,
+                7,
+                20,
+                35
+            ],
+            "response": "degree"
+        },
+        "avionics_switch": {
+            "status": "sim/cockpit2/switches/avionics_power_on",
+            "on": [
+                "sim/systems/avionics_on",
+                "thranda/electrical/AC_InverterSwitch=1"
+            ],
+            "off": [
+                "sim/systems/avionics_off",
+                "thranda/electrical/AC_InverterSwitch=1"
+            ]
+        },
+        "seatbelt_light": {
+            "status": "sim/cockpit2/switches/fasten_seat_belts",
+            "on": "sim/cockpit2/switches/fasten_seat_belts=1",
+            "off": "sim/cockpit2/switches/fasten_seat_belts=0"
+        },
+        "landing_light": {
+            "status": "thranda/lights/LandingLightLeft",
+            "on": [
+                "sim/lights/landing_lights_on",
+                "thranda/lights/RecogLights=1"
+            ],
+            "off": [
+                "sim/lights/landing_lights_off",
+                "thranda/lights/RecogLights=0"
+            ]
+        },
+        "generator_switch": {
+            "status": "sim/cockpit/electrical/generator_apu_on",
+            "on": [
+                "sim/electrical/generator_1_on",
+                "sim/electrical/generator_2_on",
+                "sim/cockpit/electrical/generator_apu_on=1"
+            ],
+            "off": [
+                "sim/electrical/generator_1_off",
+                "sim/electrical/generator_2_off",
+                "sim/cockpit/electrical/generator_apu_on=0"
+            ]
+        },
+        "autopilot": {
+            "status": "sim/cockpit2/autopilot/autopilot_on_or_cws",
+            "on": "sim/autopilot/servos_toggle",
+            "off": "sim/autopilot/servos_toggle"
+        },
+        "ap_heading_hold": {
+            "status": "sim/cockpit2/autopilot/heading_mode",
+            "on": "sim/autopilot/heading",
+            "off": "sim/autopilot/heading"
+        },
+        "ap_hnav": {
+            "status": "sim/cockpit2/autopilot/nav_status",
+            "on": "sim/autopilot/NAV",
+            "off": "sim/autopilot/NAV"
+        },
+        "ap_approach_hold": {
+            "status": "sim/cockpit2/autopilot/glideslope_status",
+            "on": "sim/autopilot/approach",
+            "off": "sim/autopilot/approach"
+        },
+        "ap_pitch_hold": {
+            "status": "sim/cockpit2/autopilot/altitude_hold_armed",
+            "on": "sim/autopilot/altitude_arm",
+            "off": "sim/autopilot/altitude_arm"
+        },
+        "ap_vnav": {
+            "status": "sim/cockpit2/autopilot/fms_vnav",
+            "on": "sim/cockpit2/autopilot/fms_vnav=1",
+            "off": "sim/cockpit2/autopilot/fms_vnav=0"
+        }
+    }
 }
-	

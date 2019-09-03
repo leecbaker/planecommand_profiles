@@ -1,0 +1,134 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "Cessna Mustang",
+    "author": "SSmith",
+    "name_filter": "Cessna Citation Mustang",
+    "author_filter": "Rob Wilson",
+    "config": {
+        "battery_switch": {
+            "status": "sim/cockpit/electrical/battery_on",
+            "on": [
+                "sim/cockpit/electrical/battery_on=1",
+                "Mustang/cockpit/electrical/battery_switch=2"
+            ],
+            "off": [
+                "sim/cockpit/electrical/battery_on=0",
+                "Mustang/cockpit/electrical/battery_switch=1"
+            ]
+        },
+        "nav_light": {
+            "status": "sim/cockpit2/switches/navigation_lights_on",
+            "on": "sim/cockpit2/switches/navigation_lights_on=1",
+            "off": "sim/cockpit2/switches/navigation_lights_on=0"
+        },
+        "beacon_light": {
+            "status": "sim/cockpit2/switches/beacon_on",
+            "on": "sim/cockpit2/switches/beacon_on=1",
+            "off": "sim/cockpit2/switches/beacon_on=0"
+        },
+        "avionics_switch": {
+            "status": "sim/cockpit2/switches/avionics_power_on",
+            "on": "sim/cockpit2/switches/avionics_power_on=1",
+            "off": "sim/cockpit2/switches/avionics_power_on=0"
+        },
+        "taxi_light": {
+            "status": "sim/cockpit2/switches/taxi_light_on",
+            "on": [
+                "Mustang/cockpit/lighting/taxi_landing=1",
+                "Mustang/exterior/taxi_light_spill=1",
+                "sim/cockpit2/switches/taxi_light_on=1",
+                "sim/cockpit2/switches/landing_lights_on=0"
+            ],
+            "off": [
+                "Mustang/cockpit/lighting/taxi_landing=0",
+                "Mustang/exterior/taxi_light_spill=0",
+                "sim/cockpit2/switches/taxi_light_on=0"
+            ]
+        },
+        "landing_light": {
+            "status": "sim/cockpit2/switches/landing_lights_on",
+            "on": [
+                "sim/cockpit2/switches/landing_lights_on=1",
+                "sim/cockpit2/switches/taxi_light_on=0",
+                "Mustang/cockpit/lighting/taxi_landing=2",
+                "Mustang/exterior/landing_light_spill=1"
+            ],
+            "off": [
+                "Mustang/exterior/landing_light_spill=0",
+                "Mustang/exterior/taxi_light_spill=1                                            ",
+                "Mustang/cockpit/lighting/taxi_landing=1",
+                "sim/cockpit2/switches/taxi_light_on=1",
+                "sim/cockpit2/switches/landing_lights_on=0"
+            ]
+        },
+        "seatbelt_light": {
+            "status": "Mustang/cockpit/pax_safety",
+            "on": "Mustang/cockpit/pax_safety=1",
+            "off": "Mustang/cockpit/pax_safety=0"
+        },
+        "generator_switch": {
+            "status": "sim/cockpit2/electrical/APU_generator_on",
+            "on": [
+                "Mustang/cockpit/electrical/l_gen_switch=2",
+                "Mustang/cockpit/electrical/r_gen_switch=2",
+                "sim/cockpit/electrical/generator_apu_on=1"
+            ],
+            "off": [
+                "Mustang/cockpit/electrical/l_gen_switch=1",
+                "Mustang/cockpit/electrical/r_gen_switch=1",
+                "sim/cockpit/electrical/generator_apu_on=0"
+            ]
+        },
+        "ap_heading_hold": {
+            "status": "sim/cockpit2/autopilot/heading_mode",
+            "on": "sim/GPS/g1000n1_hdg",
+            "off": "sim/GPS/g1000n1_hdg"
+        },
+        "ap_hnav": {
+            "status": "sim/cockpit2/autopilot/nav_status",
+            "on": "sim/autopilot/NAV",
+            "off": "sim/autopilot/NAV"
+        },
+        "ap_approach_hold": {
+            "status": "sim/cockpit2/autopilot/approach_status",
+            "on": "sim/autopilot/approach",
+            "off": "sim/autopilot/approach"
+        },
+        "ap_alt_hold": {
+            "status": "sim/cockpit2/autopilot/altitude_hold_status",
+            "on": "sim/autopilot/altitude_hold",
+            "off": "sim/autopilot/altitude_hold"
+        },
+        "ap_vert_speed_hold": {
+            "status": "Mustang/autopilot/annun/vs",
+            "on": "sim/autopilot/vertical_speed",
+            "off": "sim/autopilot/vertical_speed"
+        },
+        "ap_vnav": {
+            "status": "Mustang/autopilot/annun/vnv",
+            "on": "sim/autopilot/vnav",
+            "off": "sim/autopilot/vnav"
+        },
+        "ap_level_change": {
+            "status": "Mustang/autopilot/annun/flc",
+            "on": "sim/autopilot/level_change",
+            "off": "sim/autopilot/level_change"
+        },
+        "ap_speed_hold": {
+            "status": "Mustang/autopilot/annun/spd",
+            "on": "Mustang/autopilot/annun/spd=2",
+            "off": "Mustang/autopilot/annun/spd=0"
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit/autopilot/vertical_velocity",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/vertical_speed_up",
+                    "down": "sim/autopilot/vertical_speed_down",
+                    "step": 1
+                }
+            ]
+        }
+    }
+}
