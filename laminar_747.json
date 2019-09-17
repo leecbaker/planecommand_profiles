@@ -9,24 +9,34 @@
             "response": "degree"
         },
         "autopilot": {
-            "status": "laminar/B747/autopilot/cmd_L_mode/status", 
+            "status": "laminar/B747/autopilot/cmd_L_mode/status",
             "on": "laminar/B747/autopilot/button_switch/cmd_L",
             "off": "laminar/B747/autopilot/slide_switch/disengage_bar"
         },
         "flight_director": {
-            "status": "laminar/B747/autopilot/AFDS/status_annun", 
+            "status": "laminar/B747/autopilot/AFDS/status_annun",
             "on": "laminar/B747/toggle_switch/flight_dir_L",
             "off": "laminar/B747/toggle_switch/flight_dir_L"
         },
         "autothrottle": {
-            "status": "laminar/B747/autothrottle/armed", 
+            "status": "laminar/B747/autothrottle/armed",
             "on": "laminar/B747/toggle_switch/autothrottle",
             "off": "laminar/B747/toggle_switch/autothrottle"
         },
         "landing_light": {
             "status": "sim/cockpit/electrical/landing_lights_on",
-            "on": ["laminar/B747/toggle_switch/landing_light_IBL", "laminar/B747/toggle_switch/landing_light_IBR", "laminar/B747/toggle_switch/landing_light_OBL", "laminar/B747/toggle_switch/landing_light_OBR"],
-            "off": ["laminar/B747/toggle_switch/landing_light_IBL", "laminar/B747/toggle_switch/landing_light_IBR", "laminar/B747/toggle_switch/landing_light_OBL", "laminar/B747/toggle_switch/landing_light_OBR"]
+            "on": [
+                "laminar/B747/toggle_switch/landing_light_IBL",
+                "laminar/B747/toggle_switch/landing_light_IBR",
+                "laminar/B747/toggle_switch/landing_light_OBL",
+                "laminar/B747/toggle_switch/landing_light_OBR"
+            ],
+            "off": [
+                "laminar/B747/toggle_switch/landing_light_IBL",
+                "laminar/B747/toggle_switch/landing_light_IBR",
+                "laminar/B747/toggle_switch/landing_light_OBL",
+                "laminar/B747/toggle_switch/landing_light_OBR"
+            ]
         },
         "taxi_light": {
             "status": "sim/cockpit/electrical/taxi_light_on",

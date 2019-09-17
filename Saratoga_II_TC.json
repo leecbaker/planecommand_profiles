@@ -6,8 +6,13 @@
     "author_filter": "Alabeo",
     "config": {
         "flaps": {
-            "settings": [0,10,25,40],
+            "settings": [
+                0,
+                10,
+                25,
+                40
+            ],
             "response": "degree"
         }
-    }   
-}   
+    }
+}

@@ -6,14 +6,14 @@
     "author_filter": "Cooper",
     "config": {
         "taxi_light": {
-            "status":"afm/m20r/cockpit/switches/overhead/taxiL",
-            "on":"afm/m20r/cmd/switches/panel/taxi",
-            "off":"afm/m20r/cmd/switches/panel/taxi"
+            "status": "afm/m20r/cockpit/switches/overhead/taxiL",
+            "on": "afm/m20r/cmd/switches/panel/taxi",
+            "off": "afm/m20r/cmd/switches/panel/taxi"
         },
         "strobe_light": {
-            "status":"afm/m20r/cockpit/switches/overhead/strobe",
-            "on":"afm/m20r/cmd/switches/panel/strobe",
-            "off":"afm/m20r/cmd/switches/panel/strobe"
+            "status": "afm/m20r/cockpit/switches/overhead/strobe",
+            "on": "afm/m20r/cmd/switches/panel/strobe",
+            "off": "afm/m20r/cmd/switches/panel/strobe"
         },
         "beacon_light": {
             "on": "afm/m20r/cmd/switches/panel/rotBcn",
@@ -26,104 +26,104 @@
             "status": "afm/m20r/cockpit/switches/overhead/landL"
         },
         "nav_light": {
-            "status":"afm/m20r/cockpit/switches/overhead/nav",
-            "on":"afm/m20r/cmd/switches/panel/nav",
-            "off":"afm/m20r/cmd/switches/panel/nav"
+            "status": "afm/m20r/cockpit/switches/overhead/nav",
+            "on": "afm/m20r/cmd/switches/panel/nav",
+            "off": "afm/m20r/cmd/switches/panel/nav"
         },
         "pitot_heat": {
-            "status":"afm/m20r/cockpit/switches/mainPanel/pitotHeat",
-            "on":"afm/m20r/cmd/switches/panel/pitotHeat",
-            "off":"afm/m20r/cmd/switches/panel/pitotHeat"
+            "status": "afm/m20r/cockpit/switches/mainPanel/pitotHeat",
+            "on": "afm/m20r/cmd/switches/panel/pitotHeat",
+            "off": "afm/m20r/cmd/switches/panel/pitotHeat"
         },
         "audio_com1": {
-            "status":"sim/cockpit2/radios/actuators/audio_selection_com1",
-            "on":"afm/m20r/cmd/avionics/audio/com1",
-            "off":"afm/m20r/cmd/avionics/audio/com1"
+            "status": "sim/cockpit2/radios/actuators/audio_selection_com1",
+            "on": "afm/m20r/cmd/avionics/audio/com1",
+            "off": "afm/m20r/cmd/avionics/audio/com1"
         },
         "audio_com2": {
-            "status":"sim/cockpit2/radios/actuators/audio_selection_com2",
-            "on":"afm/m20r/cmd/avionics/audio/com2",
-            "off":"afm/m20r/cmd/avionics/audio/com2"
+            "status": "sim/cockpit2/radios/actuators/audio_selection_com2",
+            "on": "afm/m20r/cmd/avionics/audio/com2",
+            "off": "afm/m20r/cmd/avionics/audio/com2"
         },
         "audio_nav1": {
-            "status":"sim/cockpit2/radios/actuators/audio_selection_nav1",
-            "on":"afm/m20r/cmd/avionics/audio/nav1",
-            "off":"afm/m20r/cmd/avionics/audio/nav1"
+            "status": "sim/cockpit2/radios/actuators/audio_selection_nav1",
+            "on": "afm/m20r/cmd/avionics/audio/nav1",
+            "off": "afm/m20r/cmd/avionics/audio/nav1"
         },
         "audio_nav2": {
-            "status":"sim/cockpit2/radios/actuators/audio_selection_nav2",
-            "on":"afm/m20r/cmd/avionics/audio/nav2",
-            "off":"afm/m20r/cmd/avionics/audio/nav2"
+            "status": "sim/cockpit2/radios/actuators/audio_selection_nav2",
+            "on": "afm/m20r/cmd/avionics/audio/nav2",
+            "off": "afm/m20r/cmd/avionics/audio/nav2"
         },
         "audio_dme": {
-            "status":"sim/cockpit2/radios/actuators/audio_dme_enabled",
-            "on":"afm/m20r/cmd/avionics/audio/dme",
-            "off":"afm/m20r/cmd/avionics/audio/dme"
+            "status": "sim/cockpit2/radios/actuators/audio_dme_enabled",
+            "on": "afm/m20r/cmd/avionics/audio/dme",
+            "off": "afm/m20r/cmd/avionics/audio/dme"
         },
         "audio_adf1": {
-            "status":"sim/cockpit2/radios/actuators/audio_selection_adf1",
-            "on":"afm/m20r/cmd/avionics/audio/adf",
-            "off":"afm/m20r/cmd/avionics/audio/adf"
+            "status": "sim/cockpit2/radios/actuators/audio_selection_adf1",
+            "on": "afm/m20r/cmd/avionics/audio/adf",
+            "off": "afm/m20r/cmd/avionics/audio/adf"
         },
         "audio_marker": {
-            "status":"sim/cockpit2/radios/actuators/audio_marker_enabled",
-            "on":"afm/m20r/cmd/avionics/audio/mkrMute",
-            "off":"afm/m20r/cmd/avionics/audio/mkrMute"
+            "status": "sim/cockpit2/radios/actuators/audio_marker_enabled",
+            "on": "afm/m20r/cmd/avionics/audio/mkrMute",
+            "off": "afm/m20r/cmd/avionics/audio/mkrMute"
         },
         "ap_alt_hold": {
-            "status":"sim/cockpit2/autopilot/altitude_hold_status",
-            "on":"afm/m20r/cmd/avionics/ap/alt",
-            "off":"afm/m20r/cmd/avionics/ap/alt"
+            "status": "sim/cockpit2/autopilot/altitude_hold_status",
+            "on": "afm/m20r/cmd/avionics/ap/alt",
+            "off": "afm/m20r/cmd/avionics/ap/alt"
         },
         "autopilot": {
-            "status":"sim/cockpit2/autopilot/autopilot_on",
-            "on":"afm/m20r/cmd/avionics/ap/ap",
-            "off":"afm/m20r/cmd/avionics/ap/ap"
+            "status": "sim/cockpit2/autopilot/autopilot_on",
+            "on": "afm/m20r/cmd/avionics/ap/ap",
+            "off": "afm/m20r/cmd/avionics/ap/ap"
         },
         "flight_director": {
-            "status":"sim/cockpit2/annunciators/flight_director",
-            "on":"afm/m20r/cmd/avionics/ap/fd",
-            "off":"afm/m20r/cmd/avionics/ap/fd"
+            "status": "sim/cockpit2/annunciators/flight_director",
+            "on": "afm/m20r/cmd/avionics/ap/fd",
+            "off": "afm/m20r/cmd/avionics/ap/fd"
         },
         "ap_approach_hold": {
-            "status":"sim/cockpit2/autopilot/approach_status",
-            "on":"afm/m20r/cmd/avionics/ap/app",
-            "off":"afm/m20r/cmd/avionics/ap/app"
+            "status": "sim/cockpit2/autopilot/approach_status",
+            "on": "afm/m20r/cmd/avionics/ap/app",
+            "off": "afm/m20r/cmd/avionics/ap/app"
         },
         "ap_heading_hold": {
-            "status":"sim/cockpit2/autopilot/heading_status",
-            "on":"afm/m20r/cmd/avionics/ap/hdg",
-            "off":"afm/m20r/cmd/avionics/ap/hdg"
+            "status": "sim/cockpit2/autopilot/heading_status",
+            "on": "afm/m20r/cmd/avionics/ap/hdg",
+            "off": "afm/m20r/cmd/avionics/ap/hdg"
         },
         "ap_hnav": {
-            "status":"sim/cockpit2/autopilot/nav_status",
-            "on":"afm/m20r/cmd/avionics/ap/nav",
-            "off":"afm/m20r/cmd/avionics/ap/nav"
+            "status": "sim/cockpit2/autopilot/nav_status",
+            "on": "afm/m20r/cmd/avionics/ap/nav",
+            "off": "afm/m20r/cmd/avionics/ap/nav"
         },
         "ap_vert_speed_hold": {
-            "status":"sim/cockpit2/autopilot/vvi_status",
-            "on":"afm/m20r/cmd/avionics/ap/vs",
-            "off":"afm/m20r/cmd/avionics/ap/vs"
+            "status": "sim/cockpit2/autopilot/vvi_status",
+            "on": "afm/m20r/cmd/avionics/ap/vs",
+            "off": "afm/m20r/cmd/avionics/ap/vs"
         },
         "altimeter": {
-            "value":"afm/m20r/cockpit/gauges/altimeter/baroPressureHPA",
-            "value_step":100,
+            "value": "afm/m20r/cockpit/gauges/altimeter/baroPressureHPA",
+            "value_step": 100,
             "adjustments": [
                 {
-                    "up":"afm/m20r/cmd/cockpit/gauges/baroUp",
-                    "down":"afm/m20r/cmd/cockpit/gauges/baroDown",
-                    "step":1
+                    "up": "afm/m20r/cmd/cockpit/gauges/baroUp",
+                    "down": "afm/m20r/cmd/cockpit/gauges/baroDown",
+                    "step": 1
                 }
             ]
         },
-        "ap_vspeed" : {
-            "value":"sim/cockpit2/autopilot/vvi_dial_fpm",
-            "value_step":1,
+        "ap_vspeed": {
+            "value": "sim/cockpit2/autopilot/vvi_dial_fpm",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"afm/m20r/cmd/panel/hsi/courseDown",
-                    "down":"afm/m20r/cmd/panel/hsi/courseUp",
-                    "step":1
+                    "up": "afm/m20r/cmd/panel/hsi/courseDown",
+                    "down": "afm/m20r/cmd/panel/hsi/courseUp",
+                    "step": 1
                 }
             ]
         },

@@ -8,13 +8,12 @@
         "landing_light": {
             "status": "cl300/landlight1_h",
             "on": "sim/lights/landing_lights_toggle",
-            "off": "sim/lights/landing_lights_toggle" 
+            "off": "sim/lights/landing_lights_toggle"
         },
         "taxi_light": {
             "status": "cl300/xap_taxilight_h",
             "on": "sim/lights/taxi_lights_toggle",
             "off": "sim/lights/taxi_lights_toggle"
-        }   
+        }
     }
 }
-    

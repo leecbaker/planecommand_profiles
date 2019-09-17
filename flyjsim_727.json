@@ -7,8 +7,16 @@
     "config": {
         "landing_light": {
             "status": "FJS/727/num/OutBoundLLightSwitch1",
-            "on": ["sim/lights/landing_lights_on", "FJS/727/num/OutBoundLLightSwitch1=1", "FJS/727/num/OutBoundLLightSwitch2=1"],
-            "off": ["sim/lights/landing_lights_off", "FJS/727/num/OutBoundLLightSwitch1=0", "FJS/727/num/OutBoundLLightSwitch2=0"]
+            "on": [
+                "sim/lights/landing_lights_on",
+                "FJS/727/num/OutBoundLLightSwitch1=1",
+                "FJS/727/num/OutBoundLLightSwitch2=1"
+            ],
+            "off": [
+                "sim/lights/landing_lights_off",
+                "FJS/727/num/OutBoundLLightSwitch1=0",
+                "FJS/727/num/OutBoundLLightSwitch2=0"
+            ]
         },
         "flaps": {
             "response": "degree"

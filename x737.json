@@ -9,18 +9,24 @@
             "response": "degree"
         },
         "pitot_heat": {
-            "status":"x737/ovh/antiIce/leftProbeHeat_state",
-            "on":["x737/ice_and_rain/PITOTHEAT1_ON", "x737/ice_and_rain/PITOTHEAT2_ON"],
-            "off":["x737/ice_and_rain/PITOTHEAT1_OFF", "x737/ice_and_rain/PITOTHEAT2_OFF"]
+            "status": "x737/ovh/antiIce/leftProbeHeat_state",
+            "on": [
+                "x737/ice_and_rain/PITOTHEAT1_ON",
+                "x737/ice_and_rain/PITOTHEAT2_ON"
+            ],
+            "off": [
+                "x737/ice_and_rain/PITOTHEAT1_OFF",
+                "x737/ice_and_rain/PITOTHEAT2_OFF"
+            ]
         },
         "taxi_light": {
-            "status":"x737/systems/exteriorLights/taxiLightsSwitch",
-            "on":"x737/exteriorLights/TAXILIGHT_ON",
-            "off":"x737/exteriorLights/TAXILIGHT_OFF"
+            "status": "x737/systems/exteriorLights/taxiLightsSwitch",
+            "on": "x737/exteriorLights/TAXILIGHT_ON",
+            "off": "x737/exteriorLights/TAXILIGHT_OFF"
         },
         "landing_light": {
-            "status":"x737/systems/exteriorLights/leftLandingLightOn",
-            "on":[
+            "status": "x737/systems/exteriorLights/leftLandingLightOn",
+            "on": [
                 "x737/exteriorLights/LEFT_RETRACTABLE_UP",
                 "x737/exteriorLights/LEFT_RETRACTABLE_UP",
                 "x737/exteriorLights/RIGHT_RETRACTABLE_UP",
@@ -28,7 +34,7 @@
                 "x737/exteriorLights/LEFT_FIXED_ON",
                 "x737/exteriorLights/RIGHT_FIXED_ON"
             ],
-            "off":[
+            "off": [
                 "x737/exteriorLights/LEFT_FIXED_OFF",
                 "x737/exteriorLights/RIGHT_FIXED_OFF",
                 "x737/exteriorLights/LEFT_RETRACTABLE_DOWN",
@@ -36,180 +42,179 @@
                 "x737/exteriorLights/RIGHT_RETRACTABLE_DOWN",
                 "x737/exteriorLights/RIGHT_RETRACTABLE_DOWN"
             ]
-        }, 
+        },
         "nav_light": {
             "status": "x737/systems/exteriorLights/positionLightSwitch",
-            "on":"x737/systems/exteriorLights/positionLightSwitch=-1",
-            "off":"x737/systems/exteriorLights/positionLightSwitch=0"
+            "on": "x737/systems/exteriorLights/positionLightSwitch=-1",
+            "off": "x737/systems/exteriorLights/positionLightSwitch=0"
         },
         "beacon_light": {
-            "status":"x737/systems/exteriorLights/beaconLightSwitch",
-            "on":"x737/systems/exteriorLights/beaconLightSwitchUp=1",
-            "off":"x737/systems/exteriorLights/beaconLightSwitchUp=0"
+            "status": "x737/systems/exteriorLights/beaconLightSwitch",
+            "on": "x737/systems/exteriorLights/beaconLightSwitchUp=1",
+            "off": "x737/systems/exteriorLights/beaconLightSwitchUp=0"
         },
         "strobe_light": {
             "status": "x737/systems/exteriorLights/strobePosLightSwitch",
             "on": "x737/systems/exteriorLights/strobePosLightSwitch=1",
-            "off":"x737/systems/exteriorLights/strobePosLightSwitch=0"
+            "off": "x737/systems/exteriorLights/strobePosLightSwitch=0"
         },
         "autopilot": {
-            "status": "x737/systems/afds/CMD_A", 
+            "status": "x737/systems/afds/CMD_A",
             "on": "x737/mcp/CMDA_ON",
             "off": "x737/mcp/CMDA_OFF"
         },
         "flight_director": {
-            "status": "x737/systems/afds/fdA_status", 
+            "status": "x737/systems/afds/fdA_status",
             "on": "x737/mcp/FD_A_ON",
             "off": "x737/mcp/FD_A_OFF"
         },
         "ap_alt_hold": {
             "status": "x737/systems/afds/ALTHLD",
-             "on": "x737/mcp/ALTHLD_OFF",
-             "off": "x737/mcp/ALTHLD_ON"
+            "on": "x737/mcp/ALTHLD_OFF",
+            "off": "x737/mcp/ALTHLD_ON"
         },
         "ap_speed_hold": {
             "status": "x737/systems/athr/MCPSPD_mode",
-             "on": "x737/mcp/ATHR_ARM_ON",
-             "off": "x737/mcp/ATHR_ARM_OFF"
+            "on": "x737/mcp/ATHR_ARM_ON",
+            "off": "x737/mcp/ATHR_ARM_OFF"
         },
         "ap_vert_speed_hold": {
-            "status": "x737/systems/afds/VS_armed_or_eng", 
+            "status": "x737/systems/afds/VS_armed_or_eng",
             "on": "x737/mcp/VS_ON",
             "off": "x737/mcp/VS_OFF"
         },
         "ap_pitch_hold": null,
         "ap_heading_hold": {
-            "status": "x737/systems/afds/HDG", 
+            "status": "x737/systems/afds/HDG",
             "on": "x737/mcp/HDGSEL_ON",
             "off": "x737/mcp/HDGSEL_OFF"
         },
         "ap_approach_hold": {
-            "status": "x737/systems/afds/APP", 
+            "status": "x737/systems/afds/APP",
             "on": "x737/mcp/APP_ON",
             "off": "x737/mcp/APP_OFF"
         },
         "ap_vnav": {
-            "status": "x737/systems/afds/VNAV", 
+            "status": "x737/systems/afds/VNAV",
             "on": "x737/mcp/VNAV_ON",
             "off": "x737/mcp/VNAV_OFF"
         },
         "ap_hnav": {
-            "status": "x737/systems/afds/LNAV", 
+            "status": "x737/systems/afds/LNAV",
             "on": "x737/mcp/LNAV_ON",
             "off": "x737/mcp/LNAV_OFF"
         },
         "autothrottle": {
-            "status": "x737/systems/athr/athr_armed", 
+            "status": "x737/systems/athr/athr_armed",
             "on": "x737/mcp/ATHR_ARM_ON",
             "off": "x737/mcp/ATHR_ARM_OFF"
         },
         "speed_intervention": {
-            "status": "x737/systems/afds/SPDINTV", 
+            "status": "x737/systems/afds/SPDINTV",
             "on": "x737/mcp/SPDINTV_ON",
             "off": "x737/mcp/SPDINTV_OFF"
         },
         "ap_heading": {
-            "value":"x737/systems/afds/HDG_magnhdg",
-            "value_step":1,
+            "value": "x737/systems/afds/HDG_magnhdg",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"x737/mcp/HDG+1",
-                    "down":"x737/mcp/HDG-1",
-                    "step":1
+                    "up": "x737/mcp/HDG+1",
+                    "down": "x737/mcp/HDG-1",
+                    "step": 1
                 },
                 {
-                    "up":"x737/mcp/HDG+6",
-                    "down":"x737/mcp/HDG-6",
-                    "step":6
+                    "up": "x737/mcp/HDG+6",
+                    "down": "x737/mcp/HDG-6",
+                    "step": 6
                 }
             ]
         },
         "ap_airspeed_knots": {
-            "value":"x737/systems/athr/MCPSPD_spdkias",
-            "value_step":1,
+            "value": "x737/systems/athr/MCPSPD_spdkias",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"x737/mcp/MCPSPD+1",
-                    "down":"x737/mcp/MCPSPD-1",
-                    "step":1
+                    "up": "x737/mcp/MCPSPD+1",
+                    "down": "x737/mcp/MCPSPD-1",
+                    "step": 1
                 },
                 {
-                    "up":"x737/mcp/MCPSPD+10",
-                    "down":"x737/mcp/MCPSPD-10",
-                    "step":10
+                    "up": "x737/mcp/MCPSPD+10",
+                    "down": "x737/mcp/MCPSPD-10",
+                    "step": 10
                 }
             ]
         },
         "ap_airspeed_mach": {
-            "value":"x737/systems/athr/MCPSPD_spdmach",
-            "value_step":100,
+            "value": "x737/systems/athr/MCPSPD_spdmach",
+            "value_step": 100,
             "adjustments": [
                 {
-                    "up":"x737/mcp/MCPSPD+1",
-                    "down":"x737/mcp/MCPSPD-1",
-                    "step":1
+                    "up": "x737/mcp/MCPSPD+1",
+                    "down": "x737/mcp/MCPSPD-1",
+                    "step": 1
                 },
                 {
-                    "up":"x737/mcp/MCPSPD+10",
-                    "down":"x737/mcp/MCPSPD-10",
-                    "step":10
+                    "up": "x737/mcp/MCPSPD+10",
+                    "down": "x737/mcp/MCPSPD-10",
+                    "step": 10
                 }
             ]
         },
         "ap_altitude": {
-            "value":"x737/systems/afds/ALTHLD_baroalt",
-            "value_step":1,
+            "value": "x737/systems/afds/ALTHLD_baroalt",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"x737/mcp/ALTSEL+100",
-                    "down":"x737/mcp/ALTSEL-100",
-                    "step":100
+                    "up": "x737/mcp/ALTSEL+100",
+                    "down": "x737/mcp/ALTSEL-100",
+                    "step": 100
                 },
                 {
-                    "up":"x737/mcp/ALTSEL+1000",
-                    "down":"x737/mcp/ALTSEL-1000",
-                    "step":1000
+                    "up": "x737/mcp/ALTSEL+1000",
+                    "down": "x737/mcp/ALTSEL-1000",
+                    "step": 1000
                 }
             ]
         },
         "ap_vspeed": {
-            "value":"x737/systems/afds/VS_vvi",
-            "value_step":1,
+            "value": "x737/systems/afds/VS_vvi",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"x737/mcp/VVI+100",
-                    "down":"x737/mcp/VVI-100",
-                    "step":100
+                    "up": "x737/mcp/VVI+100",
+                    "down": "x737/mcp/VVI-100",
+                    "step": 100
                 },
                 {
-                    "up":"x737/mcp/VVI+500",
-                    "down":"x737/mcp/VVI-500",
-                    "step":500
+                    "up": "x737/mcp/VVI+500",
+                    "down": "x737/mcp/VVI-500",
+                    "step": 500
                 }
             ]
         },
         "obs1": {
-            "value":"x737/systems/MCP/OBS1_value",
-            "value_step":1,
+            "value": "x737/systems/MCP/OBS1_value",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"x737/mcp/NAV1_COURSE+1",
-                    "down":"x737/mcp/NAV1_COURSE-1",
-                    "step":1
+                    "up": "x737/mcp/NAV1_COURSE+1",
+                    "down": "x737/mcp/NAV1_COURSE-1",
+                    "step": 1
                 }
             ]
         },
         "obs2": {
-            "value":"x737/systems/MCP/OBS2_value",
-            "value_step":1,
+            "value": "x737/systems/MCP/OBS2_value",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"x737/mcp/NAV2_COURSE+1",
-                    "down":"x737/mcp/NAV2_COURSE-1",
-                    "step":1
+                    "up": "x737/mcp/NAV2_COURSE+1",
+                    "down": "x737/mcp/NAV2_COURSE-1",
+                    "step": 1
                 }
             ]
         }
     }
 }
-

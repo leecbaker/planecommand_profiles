@@ -6,13 +6,13 @@
     "author_filter": "Laminar",
     "config": {
         "ap_altitude": {
-            "value":"sim/cockpit2/autopilot/altitude_dial_ft",
-            "value_step":1,
+            "value": "sim/cockpit2/autopilot/altitude_dial_ft",
+            "value_step": 1,
             "adjustments": [
                 {
-                    "up":"sim/autopilot/altitude_up",
-                    "down":"sim/autopilot/altitude_down",
-                    "step":100
+                    "up": "sim/autopilot/altitude_up",
+                    "down": "sim/autopilot/altitude_down",
+                    "step": 100
                 }
             ]
         }

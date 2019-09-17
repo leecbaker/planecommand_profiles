@@ -11,7 +11,9 @@
             "timeout": 20,
             "startup_commands": "sim/starters/engage_starter_#",
             "shutdown_commands": "sim/cockpit2/engine/actuators/mixture_ratio[$]=0",
-            "prestart_commands": ["sim/cockpit2/engine/actuators/mixture_ratio[$]=0.5"]
+            "prestart_commands": [
+                "sim/cockpit2/engine/actuators/mixture_ratio[$]=0.5"
+            ]
         }
     }
 }
