@@ -20,6 +20,10 @@ If you find a problem with an existing profile, create a new Issue describing th
 
 To contribute a new profile, send a pull request. If you're not comfortable with doing that, send the profile to me by email: lee@planecommand.com.
 
+## Formatting and validating a profile
+
+There is a script included to validate and format profiles. I run this every time before committing to ensure that profiles are in a consistent state.
+
 ## License
 
 Licensed under the MIT license (See the LICENSE file). This project may not be copied, modified, or distributed except according to those terms.
