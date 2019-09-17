@@ -1,118 +1,118 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-	"name": "Rotate MD-80",
-	"author": "SSmith",
-	"name_filter": "Rotate",
-	"author_filter": "Juan Alcon",
-	"config": {
-		"landing_light": {
-			"status": "Rotate/md80/lights/wing_ldg_light_switch_l",
-			"on": [
-				"Rotate/md80/lights/wing_ldg_light_switch_l=2",
-				"Rotate/md80/lights/wing_ldg_light_switch_r=2",
-				"Rotate/md80/lights/nose_light_switch=2"
-			],
-			"off": [
-				"Rotate/md80/lights/wing_ldg_light_switch_l=0",
-				"Rotate/md80/lights/wing_ldg_light_switch_r=0",
-				"Rotate/md80/lights/nose_light_switch=0"
-			]	
-		},
-		"taxi_light": {
-			"status": "Rotate/md80/lights/nose_light_switch",
-			"on": "Rotate/md80/lights/nose_light_switch=1",
-			"off": "Rotate/md80/lights/nose_light_switch=0"
-		},
-		"beacon_light": {
-			"status":"Rotate/md80/lights/anticollision_light_switch",
-			"on":"Rotate/md80/lights/anticollision_light_switch=1",
-			"off":"Rotate/md80/lights/anticollision_light_switch=0"
-		},
-		"strobe_light": {
-			"status": "Rotate/md80/lights/pos_strobe_light_switch",
-			"on": "Rotate/md80/lights/pos_strobe_light_switch=2",
-			"off":"Rotate/md80/lights/pos_strobe_light_switch=0"
-		},
-		"autopilot": {
-			"status": "sim/cockpit2/autopilot/servos_on",
-			"on": "Rotate/md80/autopilot/ap_toggle",	
-			"off": "Rotate/md80/autopilot/ap_toggle"
-		},
-		"autothrottle": {
-			"status": "Rotate/md80/autopilot/at_switch",
-			"on": "Rotate/md80/autopilot/at_switch=1",
-			"off": "Rotate/md80/autopilot/at_switch=0"
-		},
-		"flight_director": {
-			"status": "Rotate/md80/autopilot/fd_toggle", 
-			"on": "Rotate/md80/autopilot/fd_toggle=1",
-			"off": "Rotate/md80/autopilot/fd_toggle=0"
-		},		
-		"ap_altitude": {
-			"value":"sim/cockpit2/autopilot/altitude_dial_ft",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up":"Rotate/md80/autopilot/alt_sel_more",
-					"down":"Rotate/md80/autopilot/alt_sel_less",
-					"step":1
-				}
-			]
-		},
-		"ap_vspeed": {
-			"value": "sim/cockpit/autopilot/vertical_velocity",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up": "Rotate/md80/autopilot/pcw_more",
-					"down": "Rotate/md80/autopilot/pcw_less",
-					"step":1
-				}	
-			]
-		},	
-		"ap_airspeed_knots": {
-			"value":"sim/cockpit2/autopilot/airspeed_dial_kts",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up":"Rotate/md80/autopilot/speed_sel_more",
-					"down":"Rotate/md80/autopilot/speed_sel_less",
-					"step":1
-				}
-			]
-		},
-		"ap_heading": {
-			"value":"sim/cockpit2/autopilot/heading_dial_deg_mag_pilot",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up":"Rotate/md80/autopilot/hdg_sel_more",
-					"down":"Rotate/md80/autopilot/hdg_sel_less",
-					"step":1
-				}
-			]
-		},
-		"obs1": {
-			"value":"sim/cockpit2/radios/actuators/nav1_obs_deg_mag_pilot",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up":"Rotate/md80/autopilot/nav1_crs_more",
-					"down":"Rotate/md80/autopilot/nav1_crs_less",
-					"step":1
-				}
-			]
-		},
-		"obs2": {
-			"value":"sim/cockpit2/radios/actuators/nav2_obs_deg_mag_pilot",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up":"Rotate/md80/autopilot/nav2_crs_more",
-					"down":"Rotate/md80/autopilot/nav2_crs_less",
-					"step":1
-				}
-			]
-		}	
-	}
+    "name": "Rotate MD-80",
+    "author": "SSmith",
+    "name_filter": "Rotate",
+    "author_filter": "Juan Alcon",
+    "config": {
+        "landing_light": {
+            "status": "Rotate/md80/lights/wing_ldg_light_switch_l",
+            "on": [
+                "Rotate/md80/lights/wing_ldg_light_switch_l=2",
+                "Rotate/md80/lights/wing_ldg_light_switch_r=2",
+                "Rotate/md80/lights/nose_light_switch=2"
+            ],
+            "off": [
+                "Rotate/md80/lights/wing_ldg_light_switch_l=0",
+                "Rotate/md80/lights/wing_ldg_light_switch_r=0",
+                "Rotate/md80/lights/nose_light_switch=0"
+            ]   
+        },
+        "taxi_light": {
+            "status": "Rotate/md80/lights/nose_light_switch",
+            "on": "Rotate/md80/lights/nose_light_switch=1",
+            "off": "Rotate/md80/lights/nose_light_switch=0"
+        },
+        "beacon_light": {
+            "status":"Rotate/md80/lights/anticollision_light_switch",
+            "on":"Rotate/md80/lights/anticollision_light_switch=1",
+            "off":"Rotate/md80/lights/anticollision_light_switch=0"
+        },
+        "strobe_light": {
+            "status": "Rotate/md80/lights/pos_strobe_light_switch",
+            "on": "Rotate/md80/lights/pos_strobe_light_switch=2",
+            "off":"Rotate/md80/lights/pos_strobe_light_switch=0"
+        },
+        "autopilot": {
+            "status": "sim/cockpit2/autopilot/servos_on",
+            "on": "Rotate/md80/autopilot/ap_toggle",    
+            "off": "Rotate/md80/autopilot/ap_toggle"
+        },
+        "autothrottle": {
+            "status": "Rotate/md80/autopilot/at_switch",
+            "on": "Rotate/md80/autopilot/at_switch=1",
+            "off": "Rotate/md80/autopilot/at_switch=0"
+        },
+        "flight_director": {
+            "status": "Rotate/md80/autopilot/fd_toggle", 
+            "on": "Rotate/md80/autopilot/fd_toggle=1",
+            "off": "Rotate/md80/autopilot/fd_toggle=0"
+        },      
+        "ap_altitude": {
+            "value":"sim/cockpit2/autopilot/altitude_dial_ft",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up":"Rotate/md80/autopilot/alt_sel_more",
+                    "down":"Rotate/md80/autopilot/alt_sel_less",
+                    "step":1
+                }
+            ]
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit/autopilot/vertical_velocity",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up": "Rotate/md80/autopilot/pcw_more",
+                    "down": "Rotate/md80/autopilot/pcw_less",
+                    "step":1
+                }   
+            ]
+        },  
+        "ap_airspeed_knots": {
+            "value":"sim/cockpit2/autopilot/airspeed_dial_kts",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up":"Rotate/md80/autopilot/speed_sel_more",
+                    "down":"Rotate/md80/autopilot/speed_sel_less",
+                    "step":1
+                }
+            ]
+        },
+        "ap_heading": {
+            "value":"sim/cockpit2/autopilot/heading_dial_deg_mag_pilot",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up":"Rotate/md80/autopilot/hdg_sel_more",
+                    "down":"Rotate/md80/autopilot/hdg_sel_less",
+                    "step":1
+                }
+            ]
+        },
+        "obs1": {
+            "value":"sim/cockpit2/radios/actuators/nav1_obs_deg_mag_pilot",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up":"Rotate/md80/autopilot/nav1_crs_more",
+                    "down":"Rotate/md80/autopilot/nav1_crs_less",
+                    "step":1
+                }
+            ]
+        },
+        "obs2": {
+            "value":"sim/cockpit2/radios/actuators/nav2_obs_deg_mag_pilot",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up":"Rotate/md80/autopilot/nav2_crs_more",
+                    "down":"Rotate/md80/autopilot/nav2_crs_less",
+                    "step":1
+                }
+            ]
+        }   
+    }
 }

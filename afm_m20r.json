@@ -1,10 +1,10 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-	"name": "AFM Mooney M20R",
-	"author": "Lee C Baker",
-	"name_filter": "M20R",
-	"author_filter": "Cooper",
-	"config": {
+    "name": "AFM Mooney M20R",
+    "author": "Lee C Baker",
+    "name_filter": "M20R",
+    "author_filter": "Cooper",
+    "config": {
         "taxi_light": {
             "status":"afm/m20r/cockpit/switches/overhead/taxiL",
             "on":"afm/m20r/cmd/switches/panel/taxi",

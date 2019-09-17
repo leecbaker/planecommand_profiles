@@ -1,20 +1,20 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-	"name": "Challenger 300",
-	"author": "S Smith",
-	"name_filter": "",
-	"author_filter": "Denis 'ddenn' Krupin",
-	"config": {
-		"landing_light": {
-			"status": "cl300/landlight1_h",
-			"on": "sim/lights/landing_lights_toggle",
-			"off": "sim/lights/landing_lights_toggle" 
-		},
-		"taxi_light": {
-			"status": "cl300/xap_taxilight_h",
-			"on": "sim/lights/taxi_lights_toggle",
-			"off": "sim/lights/taxi_lights_toggle"
-		}	
-	}
+    "name": "Challenger 300",
+    "author": "S Smith",
+    "name_filter": "",
+    "author_filter": "Denis 'ddenn' Krupin",
+    "config": {
+        "landing_light": {
+            "status": "cl300/landlight1_h",
+            "on": "sim/lights/landing_lights_toggle",
+            "off": "sim/lights/landing_lights_toggle" 
+        },
+        "taxi_light": {
+            "status": "cl300/xap_taxilight_h",
+            "on": "sim/lights/taxi_lights_toggle",
+            "off": "sim/lights/taxi_lights_toggle"
+        }   
+    }
 }
-	
+    

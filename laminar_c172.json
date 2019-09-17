@@ -1,20 +1,20 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-	"name": "XP11 Cessna 172",
-	"author": "Lee C Baker",
-	"name_filter": "Skyhawk",
-	"author_filter": "Laminar",
-	"config": {
-		"ap_altitude": {
-			"value":"sim/cockpit2/autopilot/altitude_dial_ft",
-			"value_step":1,
-			"adjustments": [
-				{
-					"up":"sim/autopilot/altitude_up",
-					"down":"sim/autopilot/altitude_down",
-					"step":100
-				}
-			]
-		}
+    "name": "XP11 Cessna 172",
+    "author": "Lee C Baker",
+    "name_filter": "Skyhawk",
+    "author_filter": "Laminar",
+    "config": {
+        "ap_altitude": {
+            "value":"sim/cockpit2/autopilot/altitude_dial_ft",
+            "value_step":1,
+            "adjustments": [
+                {
+                    "up":"sim/autopilot/altitude_up",
+                    "down":"sim/autopilot/altitude_down",
+                    "step":100
+                }
+            ]
+        }
     }
 }
