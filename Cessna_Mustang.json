@@ -119,14 +119,14 @@
             "on": "Mustang/autopilot/annun/spd=2",
             "off": "Mustang/autopilot/annun/spd=0"
         },
-        "ap_vspeed": {
-            "value": "sim/cockpit/autopilot/vertical_velocity",
+        "ap_altitude": {
+            "value": "sim/cockpit2/autopilot/altitude_dial_ft",
             "value_step": 1,
             "adjustments": [
                 {
-                    "up": "sim/autopilot/vertical_speed_up",
-                    "down": "sim/autopilot/vertical_speed_down",
-                    "step": 1
+                    "up": "sim/autopilot/altitude_up",
+                    "down": "sim/autopilot/altitude_down",
+                    "step": 100
                 }
             ]
         }
