@@ -81,8 +81,8 @@
         },
         "ap_heading_hold": {
             "status": "sim/cockpit2/autopilot/heading_mode",
-            "on": "sim/GPS/g1000n1_hdg",
-            "off": "sim/GPS/g1000n1_hdg"
+            "on": "sim/autopilot/heading",
+            "off": "sim/autopilot/heading"
         },
         "ap_hnav": {
             "status": "sim/cockpit2/autopilot/nav_status",
@@ -118,6 +118,17 @@
             "status": "Mustang/autopilot/annun/spd",
             "on": "Mustang/autopilot/annun/spd=2",
             "off": "Mustang/autopilot/annun/spd=0"
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit/autopilot/vertical_velocity",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/vertical_speed_up",
+                    "down": "sim/autopilot/vertical_speed_down",
+                    "step": 1
+                }
+            ]
         },
         "ap_altitude": {
             "value": "sim/cockpit2/autopilot/altitude_dial_ft",
