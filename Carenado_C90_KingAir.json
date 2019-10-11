@@ -1,0 +1,40 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "XP11 Carenado C90 King Air",
+    "author": "SSmith",
+    "name_filter": "C90 King Air",
+    "author_filter": "Carenado",
+    "config": {
+        "battery_switch": {
+            "status": "sim/cockpit/electrical/battery_on",
+            "on": [
+                "sim/cockpit/electrical/battery_on=1",
+                "com/dkmp/elec=1"
+            ],
+            "off": [
+                "sim/cockpit/electrical/battery_on=0",
+                "com/dkmp/elec=0"
+            ]
+        },
+        "generator_switch": {
+            "status": "sim/cockpit/electrical/generator_apu_on",
+            "on": [
+                "sim/electrical/generator_1_on",
+                "sim/electrical/generator_2_on",
+                "com/dkmp/elec=1",
+                "sim/cockpit/electrical/generator_apu_on=1"
+            ],
+            "off": [
+                "sim/electrical/generator_1_off",
+                "sim/electrical/generator_2_off",
+                "com/dkmp/elec=0",
+                "sim/cockpit/electrical/generator_apu_on=0"
+            ]
+        },
+        "thrust_reverser": {
+            "status": "sim/cockpit2/annunciators/reverser_deployed",
+            "on": "sim/engines/thrust_reverse_toggle",
+            "off": "sim/engines/thrust_reverse_toggle"
+        }
+    }
+}
