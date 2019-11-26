@@ -1,0 +1,112 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "XP11 Bell 429",
+    "author": "SSmith",
+    "name_filter": "Bell 429",
+    "author_filter": "Tom Woods",
+    "config": {
+        "battery_switch": {
+            "status": "sim/cockpit/electrical/battery_on",
+            "on": "sim/electrical/battery_2_toggle",
+            "off": "sim/electrical/battery_2_toggle"
+        },
+        "generator_switch": {
+            "status": "sim/cockpit2/electrical/APU_generator_on",
+            "on": [
+                "sim/electrical/generator_1_toggle",
+                "sim/electrical/generator_2_toggle",
+                "sim/cockpit2/electrical/APU_generator_on=1"
+            ],
+            "off": [
+                "sim/electrical/generator_1_toggle",
+                "sim/electrical/generator_2_toggle",
+                "sim/cockpit2/electrical/APU_generator_on=0"
+            ]
+        },
+        "landing_light": {
+            "status": "sim/cockpit2/switches/landing_lights_on",
+            "on": [
+                "412/buttons/nav_lights_on",
+                "sim/cockpit2/switches/landing_lights_on=1"
+            ],
+            "off": [
+                "412/buttons/nav_lights_off",
+                "sim/cockpit2/switches/landing_lights_on=0"
+            ]
+        },
+        "nav_light": {
+            "status": "sim/cockpit/switches/no_smoking",
+            "on": [
+                "sim/cockpit/switches/no_smoking=1",
+                "sim/lights/generic_01_light_tog"
+            ],
+            "off": [
+                "sim/cockpit/switches/no_smoking=0",
+                "sim/lights/generic_01_light_tog"
+            ]
+        },
+        "brake": {
+            "status": "sim/cockpit2/switches/rotor_brake",
+            "on": "sim/flight_controls/rotor_brake_toggle",
+            "off": "sim/flight_controls/rotor_brake_toggle"
+        },
+        "autopilot": {
+            "status": "412/autopilot/led/AP1",
+            "on": [
+                "412/ap/cmd_AP1",
+                "412/ap/cmd_AP2"
+            ],
+            "off": [
+                "412/ap/cmd_AP1",
+                "412/ap/cmd_AP2"
+            ]
+        },
+        "flight_director": {
+            "status": "412/autopilot/led/FD_SEL1",
+            "on": [
+                "412/autopilot/led/FD_SEL1=1",
+                "sim/autopilot/fdir_toggle"
+            ],
+            "off": [
+                "412/autopilot/led/FD_SEL1=0",
+                "sim/autopilot/fdir_toggle"
+            ]
+        },
+        "ap_hnav": {
+            "status": "412/autopilot/NAV",
+            "on": "412/ap/cmd_NAV",
+            "off": "412/ap/cmd_NAV"
+        },
+        "ap_vnav": {
+            "status": "412/autopilot/NAV",
+            "on": "412/ap/cmd_NAV",
+            "off": "412/ap/cmd_NAV"
+        },
+        "ap_heading_hold": {
+            "status": "412/ap/heading_hold",
+            "on": "412/ap/cmd_HDG",
+            "off": "412/ap/cmd_HDG"
+        },
+        "ap_alt_hold": {
+            "status": "412/ap/alt_hold",
+            "on": "412/ap/cmd_ALT",
+            "off": "412/ap/cmd_ALT"
+        },
+        "prop_sync": {
+            "status": "412/autopilot/led/CPL",
+            "on": "412/ap/cmd_CPL",
+            "off": "412/ap/cmd_CPL"
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit/autopilot/vertical_velocity",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/vertical_speed_up",
+                    "down": "sim/autopilot/vertical_speed_down",
+                    "step": 1
+                }
+            ]
+        }
+    }
+}
