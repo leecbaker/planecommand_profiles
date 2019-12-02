@@ -1,0 +1,78 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "Toliss A319",
+    "author": "SSmith",
+    "name_filter": "A319",
+    "author_filter": "Kiwi",
+    "config": {
+        "ap_altitude": {
+            "value": "toliss_airbus/pfdoutputs/general/ap_alt_target_value",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/altitude_up",
+                    "down": "sim/autopilot/altitude_down",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_heading": {
+            "value": "sim/cockpit2/autopilot/heading_dial_deg_mag_pilot",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/heading_up",
+                    "down": "sim/autopilot/heading_down",
+                    "step": 1
+                }
+            ]
+        },
+        "ap_airspeed_knots": {
+            "value": "toliss_airbus/pfdoutputs/general/ap_speed_value",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/airspeed_up",
+                    "down": "sim/autopilot/airspeed_down",
+                    "step": 1
+                }
+            ]
+        },
+        "brake": {
+            "status": "AirbusFBW/ParkBrake",
+            "on": "toliss_airbus/park_brake_toggle",
+            "off": "toliss_airbus/park_brake_toggle"
+        },
+        "autopilot": {
+            "status": "AirbusFBW/AP1Engage",
+            "on": "toliss_airbus/ap1_push",
+            "off": "toliss_airbus/ap1_push"
+        },
+        "autothrottle": {
+            "status": "AirbusFBW/ATHRmode",
+            "on": "AirbusFBW/ATHRbutton",
+            "off": "AirbusFBW/ATHRbutton"
+        },
+        "ap_approach_hold": {
+            "status": "AirbusFBW/APPRilluminated",
+            "on": "AirbusFBW/APPRbutton",
+            "off": "AirbusFBW/APPRbutton"
+        },
+        "ap_level_change": {
+            "status": "AirbusFBW/APVerticalArmed",
+            "on": "AirbusFBW/EXPEDbutton",
+            "off": "AirbusFBW/EXPEDbutton"
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit/autopilot/vertical_velocity",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/vertical_speed_up",
+                    "down": "sim/autopilot/vertical_speed_down",
+                    "step": 1
+                }
+            ]
+        }
+    }
+}
