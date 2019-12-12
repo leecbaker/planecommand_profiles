@@ -1,0 +1,32 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "FA-18F v1.51",
+    "author": "SSmith",
+    "name_filter": "AI_FA-18F v1.51",
+    "author_filter": "COLIMATA",
+    "config": {
+        "flaps": {
+            "settings": [
+                0,
+                1,
+                2
+            ],
+            "response": "detent"
+        },
+        "taxi_light": {
+            "status": "sim/cockpit2/switches/taxi_light_on",
+            "on": "sim/cockpit2/switches/taxi_light_on=1",
+            "off": "sim/cockpit2/switches/taxi_light_on=0"
+        },
+        "landing_light": {
+            "status": "sim/cockpit2/switches/landing_lights_on",
+            "on": "sim/lights/landing_lights_on=1",
+            "off": "sim/lights/landing_lights_on=0"
+        },
+        "beacon_light": {
+            "status": "sim/cockpit2/switches/beacon_on",
+            "on": "sim/lights/beacon_lights_on",
+            "off": "sim/lights/beacon_lights_off"
+        }
+    }
+}
