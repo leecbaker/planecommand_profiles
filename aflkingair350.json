@@ -14,7 +14,7 @@
             "response": "detent"
         },
         "taxi_light": {
-            "status": "sim/cockpit/electrical/taxi_light_on",
+            "status": "KA350/ianim/pSubpanel/taxiLights",
             "on": [
                 "sim/cockpit/electrical/taxi_light_on=1",
                 "KA350/ianim/pSubpanel/taxiLights=1"
@@ -110,12 +110,12 @@
             "off": "sim/autopilot/servos_and_flight_dir_off"
         },
         "ap_heading_hold": {
-            "status": "sim/cockpit2/autopilot/heading_mode",
+            "status": "sim/cockpit2/autopilot/heading_status",
             "on": "sim/autopilot/heading",
             "off": "sim/autopilot/heading"
         },
         "ap_hnav": {
-            "status": "sim/cockpit2/autopilot/nav_status",
+            "status": "KA350/autopilot/navInternStatus",
             "on": "sim/autopilot/NAV",
             "off": "sim/autopilot/NAV"
         },
