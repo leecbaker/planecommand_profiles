@@ -1,0 +1,154 @@
+{
+    "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
+    "name": "King Air 350",
+    "author": "SSmith",
+    "name_filter": "King Air 350",
+    "author_filter": "Airfoillabs",
+    "config": {
+        "flaps": {
+            "settings": [
+                0,
+                1,
+                2
+            ],
+            "response": "detent"
+        },
+        "taxi_light": {
+            "status": "sim/cockpit/electrical/taxi_light_on",
+            "on": [
+                "sim/cockpit/electrical/taxi_light_on=1",
+                "KA350/ianim/pSubpanel/taxiLights=1"
+            ],
+            "off": [
+                "sim/cockpit/electrical/taxi_light_on=0",
+                "KA350/ianim/pSubpanel/taxiLights=0"
+            ]
+        },
+        "beacon_light": {
+            "status": "KA350/ianim/pSubpanel/beaconLights",
+            "on": "KA350/cmd/pSubpanel/beaconLights",
+            "off": "KA350/cmd/pSubpanel/beaconLights"
+        },
+        "strobe_light": {
+            "status": "KA350/ianim/pSubpanel/strobeLights",
+            "on": [
+                "KA350/cmd/pSubpanel/strobeLights",
+                "sim/lights/strobe_lights_toggle"
+            ],
+            "off": [
+                "KA350/cmd/pSubpanel/strobeLights",
+                "sim/lights/strobe_lights_toggle"
+            ]
+        },
+        "nav_light": {
+            "status": "KA350/ianim/pSubpanel/navLights",
+            "on": "sim/lights/nav_lights_toggle",
+            "off": "sim/lights/nav_lights_toggle"
+        },
+        "landing_light": {
+            "status": "KA350/ianim/pSubpanel/landingLightsLeft",
+            "on": [
+                "KA350/ianim/pSubpanel/landingLightsLeft=1",
+                "KA350/ianim/pSubpanel/landingLightsRight=1",
+                "sim/lights/landing_01_light_on",
+                "sim/lights/landing_02_light_on"
+            ],
+            "off": [
+                "KA350/ianim/pSubpanel/landingLightsLeft=0",
+                "KA350/ianim/pSubpanel/landingLightsRight=0",
+                "sim/lights/landing_01_light_off",
+                "sim/lights/landing_02_light_off"
+            ]
+        },
+        "smoking_light": {
+            "status": "KA350/ianim/ohPanel/noSmoking",
+            "on": "KA350/cmd/ohPanel/noSmokingInc",
+            "off": "KA350/cmd/ohPanel/noSmokingDec"
+        },
+        "parking_brake": {
+            "status": "sim/cockpit2/controls/parking_brake_ratio",
+            "on": [
+                "KA350/cmd/pSubpanel/parkBrake",
+                "KA350/ianim/pSubpanel/parkBrake=1"
+            ],
+            "off": [
+                "KA350/cmd/pSubpanel/parkBrake",
+                "KA350/ianim/pSubpanel/parkBrake=0"
+            ]
+        },
+        "pitot_heat": {
+            "status": "KA350/ianim/pSubpanel/pitotDeiceLeft",
+            "on": [
+                "KA350/cmd/pSubpanel/pitotDeiceLeft",
+                "KA350/cmd/pSubpanel/pitotDeiceRight"
+            ],
+            "off": [
+                "KA350/cmd/pSubpanel/pitotDeiceLeft",
+                "KA350/cmd/pSubpanel/pitotDeiceRight"
+            ]
+        },
+        "avionics_switch": {
+            "status": "sim/cockpit2/switches/avionics_power_on",
+            "on": "sim/systems/avionics_on",
+            "off": "sim/systems/avionics_off"
+        },
+        "autopilot": {
+            "status": "sim/cockpit2/autopilot/autopilot_on_or_cws",
+            "on": [
+                "sim/cockpit/autopilot/autopilot_mode=2",
+                "sim/cockpit2/autopilot/autopilot_on_or_cws=1"
+            ],
+            "off": [
+                "sim/cockpit/autopilot/autopilot_mode=1",
+                "sim/cockpit2/autopilot/autopilot_on_or_cws=0",
+                "sim/cockpit2/autopilot/flight_director_mode=0"
+            ]
+        },
+        "flight_director": {
+            "status": "sim/cockpit2/autopilot/flight_director_mode",
+            "on": "sim/autopilot/servos_and_flight_dir_on",
+            "off": "sim/autopilot/servos_and_flight_dir_off"
+        },
+        "ap_heading_hold": {
+            "status": "sim/cockpit2/autopilot/heading_mode",
+            "on": "sim/autopilot/heading",
+            "off": "sim/autopilot/heading"
+        },
+        "ap_hnav": {
+            "status": "sim/cockpit2/autopilot/nav_status",
+            "on": "sim/autopilot/NAV",
+            "off": "sim/autopilot/NAV"
+        },
+        "ap_alt_hold": {
+            "status": "sim/cockpit2/autopilot/altitude_hold_status",
+            "on": "sim/autopilot/altitude_hold",
+            "off": "sim/autopilot/altitude_hold"
+        },
+        "ap_approach_hold": {
+            "status": "sim/cockpit2/autopilot/approach_status",
+            "on": "sim/autopilot/approach",
+            "off": "sim/autopilot/approach"
+        },
+        "ap_vert_speed_hold": {
+            "status": "sim/cockpit2/autopilot/vvi_status",
+            "on": "sim/autopilot/vertical_speed",
+            "off": "sim/autopilot/vertical_speed"
+        },
+        "ap_vspeed": {
+            "value": "sim/cockpit/autopilot/vertical_velocity",
+            "value_step": 1,
+            "adjustments": [
+                {
+                    "up": "sim/autopilot/vertical_speed_up",
+                    "down": "sim/autopilot/vertical_speed_down",
+                    "step": 1
+                }
+            ]
+        },
+        "thrust_reverser": {
+            "status": "sim/cockpit2/annunciators/reverser_deployed",
+            "on": "sim/engines/thrust_reverse_toggle",
+            "off": "sim/engines/thrust_reverse_toggle"
+        }
+    }
+}
