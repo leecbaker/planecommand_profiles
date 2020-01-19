@@ -31,12 +31,22 @@
             ]
         },
         "landing_light": {
-            "status": "sim/cockpit2/switches/landing_lights_on",
-            "on": "sim/lights/landing_lights_on",
+            "status": "laminar/B738/switch/land_lights_left_pos",
+            "on": [
+                "laminar/B738/switch/land_lights_left_on",
+                "laminar/B738/switch/land_lights_right_on",
+                "laminar/B738/switch/land_lights_ret_left_dn",
+                "laminar/B738/switch/land_lights_ret_left_dn",
+                "laminar/B738/switch/land_lights_ret_right_dn",
+                "laminar/B738/switch/land_lights_ret_right_dn"
+            ],
             "off": [
-                "sim/lights/landing_lights_off",
-                "laminar/B738/switch/land_lights_left_pos=0",
-                "laminar/B738/switch/land_lights_right_pos=0"
+                "laminar/B738/switch/land_lights_left_off",
+                "laminar/B738/switch/land_lights_right_off",
+                "laminar/B738/switch/land_lights_ret_left_up",
+                "laminar/B738/switch/land_lights_ret_left_up",
+                "laminar/B738/switch/land_lights_ret_right_up",
+                "laminar/B738/switch/land_lights_ret_right_up"
             ]
         },
         "beacon_light": {
