@@ -1,8 +1,8 @@
 {
     "$schema": "https://planecommand.com/schema/aircraft_profile_v3.1.json",
-    "name": "Boeing 767-300ER XP11",
+    "name": "Boeing 757-300 XP11",
     "author": "SSmith, additional commands added by EHug",
-    "name_filter": "Boeing 767-300ER",
+    "name_filter": "Boeing 757-300",
     "author_filter": "FlightFactor and StepToSky",
     "config": {
         "landing_light": {
